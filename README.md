@@ -10,9 +10,7 @@ For everyone, with no skills or professional experience discrimination.
 
 ## Our values / goal
 
-- social experiment
-- circular economy
-- onchain only
+This is a social experiment in the attempt to create an on-chain circulare economy with a democratic governance
 
 ## Certified members
 
