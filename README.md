@@ -24,3 +24,15 @@ This is a social experiment in the attempt to create an on-chain circulare econo
 ## Privacy policy
 
 TBD society will never share publicly your private information unless a formal and written agreement is signed and sent from you.
+
+# draft idea (WIP)
+
+```mermaid
+---
+title: BTC based economy system
+---
+flowchart LR
+    Faucet --> Students((students))
+    Students --> TBDsociety((TBD society))
+    TBDsociety -.find an incentive.-> Faucet
+```
