@@ -39,9 +39,11 @@ Although we highly recommend you to hold or keep your registration donation into
 ---
 title: BTC based economy system - liquidity flow
 ---
-flowchart LR
-    Faucet --register--> Students((students))
-    Commercial[Commercial activities] --> TBDsociety
-    Students --> TBDsociety((TBD society))
+flowchart TD
+    Faucet@{ shape: flip-tri } --register--> Students((student))
+    Commercial@{ shape: flip-tri, label: Input } -. Commercial activities .-> TBDsociety
+    Students --> TBDsociety@{ shape: procs, label: "TBD society members"}
     TBDsociety -.find an incentive.-> Faucet
+    TBDsociety -- collaborate --> TBDsociety
+    TBDsociety -. spend .-> Output@{ shape: tri }
 ```
