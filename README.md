@@ -14,6 +14,10 @@
 
 > And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
 
+### Members feedback
+
+- "That's like a video game" - E.
+
 ## Members
 
 | name | identifier | registration number | certificate |
