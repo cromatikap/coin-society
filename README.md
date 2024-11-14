@@ -31,10 +31,10 @@ TBD society will never share publicly your private information unless a formal a
 
 ```mermaid
 ---
-title: BTC based economy system
+title: BTC based economy system - liquidity flow
 ---
 flowchart LR
-    Faucet --> Students((students))
+    Faucet --register--> Students((students))
     Commercial[Commercial activities] --> TBDsociety
     Students --> TBDsociety((TBD society))
     TBDsociety -.find an incentive.-> Faucet
