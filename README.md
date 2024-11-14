@@ -18,6 +18,7 @@
 
 - "That's like a video game" - E.
 - "Now, that’s the kind of government transparency that I’m here for" - A.
+- "Love the concept!!" - C.
 
 ## Members
 
