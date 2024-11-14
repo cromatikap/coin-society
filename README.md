@@ -27,6 +27,12 @@ This is a social experiment in the attempt to create an on-chain circulare econo
 
 TBD society will never share publicly your private information unless a formal and written agreement is signed and sent from you.
 
+## Registration policy
+
+First of all, if you have received your first registration transaction, we thank you from the bottom of our heart for participating in the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
+
+Although we highly recommend you to hold or keep your registration donation into the ecosystem, the TBD society and any of their member is not and will never be entitled to ask you back the funds or any other kind of financial compensation. Consider it a gift from God.
+
 # draft idea (WIP)
 
 ```mermaid
