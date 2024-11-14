@@ -35,6 +35,7 @@ title: BTC based economy system
 ---
 flowchart LR
     Faucet --> Students((students))
+    Commercial[Commercial activities] --> TBDsociety
     Students --> TBDsociety((TBD society))
     TBDsociety -.find an incentive.-> Faucet
 ```
