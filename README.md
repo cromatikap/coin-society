@@ -8,7 +8,7 @@
 
 ## Our values / goal
 
-This is a social experiment in the attempt to create an on-chain circulare economy with a democratic governance.
+*TBD society* is a non-profit organization aiming to create a decentralized only circular economy and innovate democratic governance.
 
 > Whoever oppresses the poor to increase his own wealth, or gives to the rich, will only come to poverty. ~ Proverbs 22:16
 
