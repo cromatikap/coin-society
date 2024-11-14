@@ -30,6 +30,8 @@
 | Le. | [`bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7`](https://mempool.space/address/bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7) | [`af855f...97153f`](https://mempool.space/tx/af855f8dcaad737e05365733b89995c7ffd6ab75f46021ff2b4f5b318297153f) | to renew |
 | E. | in progress | in progress | none
 
+Certificate issuer: tbdsociety.eth
+
 ## Membership registration policy
 
 First of all, if you have received your first registration transaction, we thank you from the bottom of our heart for participating in the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
