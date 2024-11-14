@@ -33,17 +33,17 @@ First of all, if you have received your first registration transaction, we thank
 
 Although we highly recommend you to hold or keep your registration donation into the ecosystem, the TBD society and any of their member is not and will never be entitled to ask you back the funds or any other kind of financial compensation. Consider it a gift from God.
 
-# draft idea (WIP)
+# [draft] trustless based economy
 
 ```mermaid
 ---
-title: BTC based economy system - liquidity flow
+title: liquidity flow (BTC)
 ---
 flowchart TD
-    Faucet@{ shape: flip-tri } --register--> Students((student))
-    Commercial@{ shape: flip-tri, label: Input } -. Commercial activities .-> TBDsociety
-    Students --> TBDsociety@{ shape: procs, label: "TBD society members"}
-    TBDsociety -.find an incentive.-> Faucet
+    Faucet@{ shape: flip-tri } ==register==> Member((member))
+    Commercial@{ shape: flip-tri, label: Input } -- Commercial activities --> TBDsociety
+    Member o-.-o TBDsociety@{ shape: procs, label: "TBD society"}
+    TBDsociety -- WIP: find an incentive --> Faucet
     TBDsociety -- collaborate --> TBDsociety
-    TBDsociety -. spend .-> Output@{ shape: tri }
+    TBDsociety -- spend --> Output@{ shape: tri }
 ```
