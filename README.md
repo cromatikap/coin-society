@@ -14,7 +14,7 @@ This is a social experiment in the attempt to create an on-chain circulare econo
 
 > And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
 
-## Certified members
+## Members
 
 | name | identifier | registration number | certificate |
 |------|------------|---------------------|-------------|
