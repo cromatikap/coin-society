@@ -1,8 +1,10 @@
 # TBD society
 
-Demistifying and democratizing blockchain technology.
+## Demistifying and democratizing blockchain technology.
 
-For everyone, with no skills or professional experience discrimination.
+### For everyone, with no discrimination of skills or professional experience.
+
+![perfect-world](https://github.com/user-attachments/assets/e30e84b8-5544-4301-a9fc-6da89f09e088)
 
 ## Our values / goal
 
