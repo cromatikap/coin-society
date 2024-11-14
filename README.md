@@ -14,8 +14,8 @@ This is a social experiment in the attempt to create an on-chain circulare econo
 
 ## Certified members
 
-- `bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9` - Carly
-- `bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh` - Andrew
+- `bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9` - C.
+- `bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh` - A.
 
 ## Privacy policy
 
