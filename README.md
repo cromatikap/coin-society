@@ -27,6 +27,7 @@
 | A. | [`bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh`](https://mempool.space/address/bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh) | [`94c5bf...442515`](https://mempool.space/tx/94c5bf1f0373c0cc4924c454719ca0a89728697d160cca05fa79fc12e9442515) | pending |
 | Lo. | [`bc1q3fk8jssft0928tzjktuefkp7k9r98g0q0ljd0m`](https://mempool.space/address/bc1q3fk8jssft0928tzjktuefkp7k9r98g0q0ljd0m) | [`06c749...c1b6cf`](https://mempool.space/tx/06c74924a411095ec6072f17005209daf05cf66eb87bce0d8c0c8201fac1b6cf) | to renew |
 | Le. | [`bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7`](https://mempool.space/address/bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7) | [`af855f...97153f`](https://mempool.space/tx/af855f8dcaad737e05365733b89995c7ffd6ab75f46021ff2b4f5b318297153f) | to renew |
+| E. | in progress | in progress | none
 
 ## Membership registration policy
 
