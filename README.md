@@ -27,7 +27,7 @@
 
 TBD society will never share publicly your private information unless a formal and written agreement is signed and sent from you.
 
-## Registration policy
+## Membership registration policy
 
 First of all, if you have received your first registration transaction, we thank you from the bottom of our heart for participating in the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
 
