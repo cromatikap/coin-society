@@ -4,13 +4,13 @@ Demistifying and democratizing blockchain technology.
 
 For everyone, with no skills or professional experience discrimination.
 
+## Our values / goal
+
+This is a social experiment in the attempt to create an on-chain circulare economy with a democratic governance.
+
 > Whoever oppresses the poor to increase his own wealth, or gives to the rich, will only come to poverty. ~ Proverbs 22:16
 
 > And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
-
-## Our values / goal
-
-This is a social experiment in the attempt to create an on-chain circulare economy with a democratic governance
 
 ## Certified members
 
