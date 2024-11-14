@@ -14,8 +14,10 @@ This is a social experiment in the attempt to create an on-chain circulare econo
 
 ## Certified members
 
-- `bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9` - C.
-- `bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh` - A.
+| name | identifier | registration number | certificate |
+|------|------------|---------------------|-------------|
+| C. | [`bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9`](https://mempool.space/address/bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9) | [`98e077...1c84ac`](https://mempool.space/tx/98e07795a8ca6452088ba64c2de4802c2c16ee733b6718da5a8a436ed31c84ac) | pending |
+| A. | [`bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh`](https://mempool.space/address/bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh) | [`94c5bf...442515`](https://mempool.space/tx/94c5bf1f0373c0cc4924c454719ca0a89728697d160cca05fa79fc12e9442515) | pending |
 
 ## Privacy policy
 
