@@ -1,4 +1,10 @@
-# TBD society
+# Society TBD
+
+### A new Society, To Be Defined *by you*.
+
+- "Now, that’s the kind of government transparency that I’m here for" - A.
+- "Love the concept!!" - C.
+- "That's like a video game" - E.
 
 ## Demistifying and democratizing blockchain technology.
 
@@ -6,19 +12,13 @@
 
 ![perfect-world](https://github.com/user-attachments/assets/e30e84b8-5544-4301-a9fc-6da89f09e088)
 
-## Our values / goal
+## Values / goal (TBD)
 
-*TBD society* is a non-profit organization aiming to create a decentralized only circular economy and innovate democratic governance.
+*Society TBD* is a non-profit organization aiming to create a decentralized only circular economy and innovate democratic governance.
 
 > Whoever oppresses the poor to increase his own wealth, or gives to the rich, will only come to poverty. ~ Proverbs 22:16
 
 > And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
-
-### Members feedback
-
-- "That's like a video game" - E.
-- "Now, that’s the kind of government transparency that I’m here for" - A.
-- "Love the concept!!" - C.
 
 ## Members
 
@@ -36,11 +36,11 @@ Certificate issuer: tbdsociety.eth
 
 First of all, if you have received your first registration transaction, we thank you from the bottom of our heart for participating in the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
 
-Although we highly recommend you to hold or keep your registration donation into the ecosystem, the TBD society and any of their member is not and will never be entitled to ask you back the funds or any other kind of financial compensation. Consider it a gift from God.
+Although we highly recommend you to hold or keep your registration donation into the ecosystem, the Society TBD and any of their member is not and will never be entitled to ask you back the funds or any other kind of financial compensation. Consider it a gift from God.
 
 ## Privacy policy
 
-TBD society will never share publicly your private information unless a formal and written agreement is signed and sent from you.
+Society TBD will never share publicly your private information unless a formal and written agreement is signed and sent from you.
 
 # [draft] trustless based economy
 
@@ -51,7 +51,7 @@ title: liquidity flow (BTC)
 flowchart TD
     Faucet@{ shape: flip-tri } ==register==> Member((member))
     Commercial@{ shape: flip-tri, label: Input } -- Commercial activities --> TBDsociety
-    Member o-.-o TBDsociety@{ shape: procs, label: "TBD society"}
+    Member o-.-o TBDsociety@{ shape: procs, label: "Society TBD"}
     TBDsociety -- WIP: find an incentive --> Faucet
     TBDsociety -- collaborate --> TBDsociety
     TBDsociety -- spend --> Output@{ shape: tri }
