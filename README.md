@@ -54,7 +54,7 @@ Although we highly recommend you to hold or keep your registration donation into
 
 < foundation name > will never share publicly your private information unless a formal and written agreement is signed and sent from you.
 
-## economy
+## Tokenonomics
 
 ```mermaid
 ---
