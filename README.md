@@ -31,6 +31,11 @@ One member offered to pay the meal by card and equalize with Bitcoin:
 | Gil Cooley | to do | | |
 | Val Potter | to do | | |
 
+## Certificate issuer
+
+- < foundation name >.eth
+- < foundation name >.org
+
 ## Values / goal (TBD)
 
 *< foundation name >* is a non-profit organization aiming to create a decentralized only circular economy and innovate democratic governance.
@@ -38,11 +43,6 @@ One member offered to pay the meal by card and equalize with Bitcoin:
 > Whoever oppresses the poor to increase his own wealth, or gives to the rich, will only come to poverty. ~ Proverbs 22:16
 
 > And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
-
-## Certificate issuer
-
-- < foundation name >.eth
-- < foundation name >.org
 
 ## Membership registration policy
 
