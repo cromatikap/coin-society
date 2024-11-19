@@ -1,5 +1,7 @@
 # < foundation name >
 
+![perfect-world](https://github.com/user-attachments/assets/e30e84b8-5544-4301-a9fc-6da89f09e088)
+
 ## Demistifying and democratizing blockchain technology.
 
 For everyone, with no discrimination of skills or professional experience.
@@ -28,10 +30,6 @@ One member offered to pay the meal by card and equalize with Bitcoin:
 | Eve Wilkins | in progress | in progress | none
 | Gil Cooley | to do | | |
 | Val Potter | to do | | |
-
-# Documentation
-
-![perfect-world](https://github.com/user-attachments/assets/e30e84b8-5544-4301-a9fc-6da89f09e088)
 
 ## Values / goal (TBD)
 
