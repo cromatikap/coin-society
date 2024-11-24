@@ -4,7 +4,7 @@ import RowMember from "./RowMember";
 
 export default function Members() {
   return <Card>
-    <Title>Members</Title>
+    <Title order={3}>Members.</Title>
     <Table>
       <Table.Thead>
         <Table.Tr>

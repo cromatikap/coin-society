@@ -16,7 +16,7 @@ export default function LandingScreen() {
           pl={{base: 0, md: "xl"}}
         >
           <Title order={1} ta={{base: "center", md: "left"}} lts="4px" style={{color: theme.colors.dark[7]}} fw="900" size={48}>coin society</Title>
-          <Title order={2} ta={{base: "center", md: "left"}} lts="1px" style={{color: theme.colors.dark[5]}}>Blockchain technology academy.</Title>
+          <Title order={2} ta={{base: "center", md: "left"}} lts="1px" style={{color: theme.colors.dark[5]}}>Blockchain technology research academy.</Title>
         </Flex> 
         <BackgroundImage visibleFrom="md" src={SideImage.src} flex="1.618" h="90vh" />
       </Flex>

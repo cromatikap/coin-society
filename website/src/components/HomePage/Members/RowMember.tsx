@@ -3,7 +3,7 @@ import type { Member } from "./data";
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
 import ChainExplorer from "@/components/ChainExplorer";
-import LinkExt from "@/components/LinkExt";
+import {LinkExt} from "@/components/Utils";
 
 export default function RowMember(props: Member) {
   const identity = props.identity;
@@ -40,7 +40,7 @@ function Socials({links}: {links: Member['identity']}) {
   
   return links && <Group align="center" gap="xs">
     {eth?.address && 
-      <LinkExt href={chainExplorer.btc.address + eth.address}>
+      <LinkExt href={eth.ens ? chainExplorer.eth.ens + eth.ens : chainExplorer.eth.address + eth.address}>
         <Tooltip label="Ethereum address">
           {eth.ens
             ? <Box>

@@ -3,7 +3,7 @@ import { BitcoinAddress } from "@/types";
 import { format } from "@/utils";
 import { Box, Button, CopyButton, Group, Tooltip } from "@mantine/core";
 import { IconClipboardCheck, IconCopy, IconUserBitcoin } from "@tabler/icons-react";
-import LinkExt from "./LinkExt";
+import {LinkExt} from "./Utils";
 
 export default function ChainExplorer(props: { address: BitcoinAddress }) {
   return <Group gap="xs" justify="flex-end">
