@@ -1,10 +1,13 @@
-import { Card, Table, Title } from "@mantine/core";
+import { Card, Table } from "@mantine/core";
 import { members } from "./data";
 import RowMember from "./RowMember";
+import { Headline } from "@/components/Utils";
 
 export default function Members() {
   return <Card miw={{xs: 600, sm: 700}}>
-    <Title order={3}>Members.</Title>
+    <Headline sub="Certified and aspiring community members.">
+      Community.
+    </Headline>
     <Table>
       <Table.Thead>
         <Table.Tr>

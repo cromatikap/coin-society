@@ -2,8 +2,8 @@ import { BitcoinAddress, BitcoinTxid, EthereumAddress, EthereumName, Url } from 
 
 export type Member = {
   occupation: string;
-  address: BitcoinAddress;
-  txRegistration: BitcoinTxid;
+  address: BitcoinAddress | null;
+  txRegistration: BitcoinTxid | null;
   certification: boolean;
   identity?: {
     instagram?: Url;
@@ -54,6 +54,42 @@ export const members: Member[] = [
     occupation: 'Barista',
     address: 'bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7',
     txRegistration: 'af855f8dcaad737e05365733b89995c7ffd6ab75f46021ff2b4f5b318297153f',
+    certification: false,
+  },
+  {
+    occupation: 'Entrepreneur',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'PhD Researcher',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Fullstack developer',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Faith Advisor',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Music Composer',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Network engineer',
+    address: null,
+    txRegistration: null,
     certification: false,
   }
 ]

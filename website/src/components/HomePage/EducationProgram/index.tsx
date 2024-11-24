@@ -1,15 +1,14 @@
-import { Blockquote, Group, Title, Text, Box, Card } from "@mantine/core";
-import { LinkOrg } from "@/components/Utils";
+import { Blockquote, Group, Text, Box, Card } from "@mantine/core";
+import { Headline, LinkOrg } from "@/components/Utils";
 import { StatsRing } from "./StatsRing";
 import { IconDeviceGamepad2, IconHeartBitcoin, IconMoodBitcoin } from "@tabler/icons-react";
 
 export default function EducationProgram() {
   return <Card>
-      <Title order={2}>Coin Education Program.</Title>
-      <Text>
-        Inclusive for all, regardless of skill set or professional experience.
-      </Text>
-      <Text c="dimmed" py="xs">
+      <Headline sub="Inclusive for all, regardless of skill set or professional experience.">
+        Education Program.
+      </Headline>
+      <Text pb="xs">
         We provide an education program for those who want to learn how to use blockchain technology.
       </Text>
       <Group gap="xl" my="xl" align="stretch">

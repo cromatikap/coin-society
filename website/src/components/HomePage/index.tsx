@@ -1,6 +1,6 @@
 "use client";
 
-import { AppShell, Box, Flex, Stack } from "@mantine/core";
+import { AppShell, Box, Flex } from "@mantine/core";
 import LandingScreen from "./LandingScreen";
 import Affixes from "./LandingScreen/Affixes";
 import Members from "./Members";
@@ -14,22 +14,22 @@ export default function HomePage() {
       <LandingScreen />
       <AppShell.Main p={{base: 'sm', xs: 'xl'}}>
         <Flex gap={{base: 'xs', lg: 'xl'}} wrap="wrap" justify="center">
-          <Stack flex={1.1}>
+          <Flex flex={1.1} gap={{base: 'xs', lg: 'xl'}} direction="column">
             <Box>
               <Description />
             </Box>
             <Box>
               <Members />
             </Box>
-          </Stack>
-          <Stack flex={1}>
+          </Flex>
+          <Flex flex={1} gap={{base: 'xs', lg: 'xl'}} direction="column">
             <Box>
               <EducationProgram />
             </Box>
             <Box>
               <ResearchProgram />
             </Box>
-          </Stack>
+          </Flex>
         </Flex>
       </AppShell.Main>
     </AppShell>
