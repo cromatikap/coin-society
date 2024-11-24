@@ -1,10 +1,13 @@
-import { Anchor, Group, Table, Tooltip } from "@mantine/core";
+import { Box, Button, Group, Table, Tooltip } from "@mantine/core";
 import type { Member } from "./data";
-import { IconCertificate, IconFileBitcoin } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
 import ChainExplorer from "@/components/ChainExplorer";
+import LinkExt from "@/components/LinkExt";
 
 export default function RowMember(props: Member) {
+  const identity = props.identity;
+
   return <Table.Tr>
     <Table.Td>
       <ChainExplorer address={props.address} />
@@ -14,18 +17,46 @@ export default function RowMember(props: Member) {
         {props.occupation}
         <Group visibleFrom="xs">
           {props.txRegistration && 
-            <Tooltip label="registration">
-              <Anchor href={chainExplorer.txid + props.txRegistration} target="_blank" rel="noreferrer">
+            <LinkExt href={chainExplorer.btc.txid + props.txRegistration}>
+              <Tooltip label="registration">
                 <IconFileBitcoin />
-              </Anchor>
-            </Tooltip>
+              </Tooltip>
+            </LinkExt>
           }
           {props.certification && <IconCertificate />}
         </Group>
       </Group>
     </Table.Td>
     <Table.Td visibleFrom="sm">
-      {props.name}
+      {identity && <Socials links={identity} />}
     </Table.Td>
   </Table.Tr>
+}
+
+function Socials({links}: {links: Member['identity']}) {
+  if(!links) return;
+
+  const { github, instagram, linkedin, x, eth } = links;
+  
+  return links && <Group align="center" gap="xs">
+    {eth?.address && 
+      <LinkExt href={chainExplorer.btc.address + eth.address}>
+        <Tooltip label="Ethereum address">
+          {eth.ens
+            ? <Box>
+                <Button visibleFrom="md" variant="transparent" size="compact-sm" p="0">{eth.ens}</Button>
+                <Box hiddenFrom="md" display="flex">
+                  <IconCurrencyEthereum />
+                </Box>
+              </Box>
+            : <IconCurrencyEthereum />
+          }
+        </Tooltip>
+      </LinkExt>
+    }
+    {x && <LinkExt href={x}><IconBrandX /></LinkExt>}
+    {instagram && <LinkExt href={instagram}><IconBrandInstagram /></LinkExt>}
+    {github && <LinkExt href={github}><IconBrandGithub /></LinkExt>}
+    {linkedin && <LinkExt href={linkedin}><IconBrandLinkedin /></LinkExt>}
+  </Group>
 }

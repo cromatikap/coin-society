@@ -10,18 +10,18 @@ export default function Members() {
         <Table.Tr>
           <Table.Th>Address</Table.Th>
           <Table.Th>Occupation</Table.Th>
-          <Table.Th visibleFrom="sm">Name</Table.Th>
+          <Table.Th visibleFrom="sm">Identity</Table.Th>
         </Table.Tr>
       </Table.Thead>
       <Table.Tbody>
         {members.map((member) => (
           <RowMember
-            key={member.name}
-            name={member.name}
+            key={member.address}
             occupation={member.occupation}
             address={member.address}
             txRegistration={member.txRegistration}
             certification={member.certification}
+            identity={member.identity}
           />
         ))}
       </Table.Tbody>

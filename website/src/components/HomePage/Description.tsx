@@ -1,14 +1,15 @@
-import { Card, Title, Text, Anchor, Blockquote, Group } from "@mantine/core";
+import { Card, Title, Text, Blockquote, Group } from "@mantine/core";
 import FAQ from "./FAQ";
 import { ensProfileUrl } from "@/config";
 import { IconDeviceGamepad2, IconHeartBitcoin, IconMoodBitcoin } from "@tabler/icons-react";
+import LinkExt from "../LinkExt";
 
 export default function Description() {
   return <Card shadow="sm" withBorder>
     <Title>About</Title>
     <Title order={4} py="xs">Demistifying and democratizing blockchain technology.</Title>
     <Text fw={500} mb="md">
-      <Anchor href={ensProfileUrl} target="_blank">coin-society.eth</Anchor> is a non-profit foundation of researchers to experiment decentralized circular economy, governance consensus using environmentally sustainable solutions.
+      <LinkExt href={ensProfileUrl}>coin-society.eth</LinkExt> is a non-profit foundation of researchers to experiment decentralized circular economy, governance consensus using environmentally sustainable solutions.
     </Text>
     <Title order={4} py="xs">Inclusive for all, regardless of skill set or professional experience.</Title>
     <Group gap="xl" my="xl" align="stretch">

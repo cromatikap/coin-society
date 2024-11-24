@@ -1,19 +1,20 @@
 import { chainExplorer } from "@/config";
 import { BitcoinAddress } from "@/types";
 import { format } from "@/utils";
-import { Anchor, Box, Button, CopyButton, Group, Tooltip } from "@mantine/core";
+import { Box, Button, CopyButton, Group, Tooltip } from "@mantine/core";
 import { IconClipboardCheck, IconCopy, IconUserBitcoin } from "@tabler/icons-react";
+import LinkExt from "./LinkExt";
 
 export default function ChainExplorer(props: { address: BitcoinAddress }) {
   return <Group gap="xs" justify="flex-end">
-    <Anchor href={chainExplorer.address + props.address} target="_blank" rel="noreferrer">
+    <LinkExt href={chainExplorer.btc.address + props.address}>
       <Box hiddenFrom="xs">
         <IconUserBitcoin />
       </Box>
       <Box visibleFrom="xs" ff="monospace">
         {format(props.address)}
       </Box>
-    </Anchor>
+    </LinkExt>
       <CopyButton value={props.address}>
         {({ copied, copy }) => (
           <Tooltip label="copy address">
