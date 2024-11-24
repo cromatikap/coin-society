@@ -1,11 +1,11 @@
 import { Card, Divider, List, Title, BackgroundImage, Badge } from "@mantine/core";
 import { CardPrimary } from "@/components/Utils";
-import Picture from "@/public/spacex-OHOU-5UVIYQ-unsplash.jpg"
+import Picture from "@/public/banner-research.jpg"
 
 export default function ResearchProgram() {
   return <CardPrimary>
       <Card.Section>
-        <BackgroundImage src={Picture.src} h={{base: 8*20, md: 8*30}} style={{backgroundPositionY: "bottom"}}>
+        <BackgroundImage src={Picture.src} h={{base: 8*20, md: 8*30}} style={{backgroundPositionY: "top"}}>
         <Badge size="xl" m="sm" color="green">Coin Labs Research Program.</Badge>
         </BackgroundImage>
       </Card.Section>
