@@ -1,7 +1,7 @@
 
 # Hello :)
 
-First of all, if you have registered with [coin-society.eth](https://app.ens.domains/coin-society.eth), congratulation for your first contribution to the foundation 🥳
+First of all, if you have registered with [coin-society.eth](https://app.ens.domains/coin-society.eth), congratulation for your first contribution 🥳
 
 Thank you for taking the time to contribute for the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
 
