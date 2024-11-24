@@ -1,7 +1,7 @@
 import { Card, Title, Text, Anchor, Blockquote, Group } from "@mantine/core";
 import FAQ from "./FAQ";
 import { ensProfileUrl } from "@/config";
-import { IconHeartBitcoin, IconMoodBitcoin, IconPhotoBitcoin } from "@tabler/icons-react";
+import { IconDeviceGamepad2, IconHeartBitcoin, IconMoodBitcoin } from "@tabler/icons-react";
 
 export default function Description() {
   return <Card shadow="sm" withBorder>
@@ -18,7 +18,7 @@ export default function Description() {
       <Blockquote flex={1} miw={8*30} color="grape" cite="– Casandra" icon={<IconHeartBitcoin />}>
         &laquo; Love the concept!! &raquo;
       </Blockquote>
-      <Blockquote flex={1} miw={8*30} color="violet" cite="– Eve" icon={<IconPhotoBitcoin />}>
+      <Blockquote flex={1} miw={8*30} color="violet" cite="– Eve" icon={<IconDeviceGamepad2 />}>
         &laquo; That&apos;s like a video game &raquo;
       </Blockquote>
     </Group>
