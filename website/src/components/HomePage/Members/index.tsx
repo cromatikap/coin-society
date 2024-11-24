@@ -3,7 +3,7 @@ import { members } from "./data";
 import RowMember from "./RowMember";
 
 export default function Members() {
-  return <Card>
+  return <Card miw={{xs: 600, sm: 700}}>
     <Title order={3}>Members.</Title>
     <Table>
       <Table.Thead>

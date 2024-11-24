@@ -14,17 +14,17 @@ export default function HomePage() {
       <LandingScreen />
       <AppShell.Main p={{base: 'sm', xs: 'xl'}}>
         <Flex gap={{base: 'xs', lg: 'xl'}} wrap="wrap" justify="center">
-          <Stack flex={1}>
+          <Stack flex={1.1}>
             <Box>
               <Description />
             </Box>
             <Box>
-              <EducationProgram />
+              <Members />
             </Box>
           </Stack>
-          <Stack>
+          <Stack flex={1}>
             <Box>
-              <Members />
+              <EducationProgram />
             </Box>
             <Box>
               <ResearchProgram />
