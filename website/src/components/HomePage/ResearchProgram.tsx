@@ -6,10 +6,10 @@ export default function ResearchProgram() {
   return <CardPrimary>
       <Card.Section>
         <BackgroundImage src={Picture.src} h={{base: 8*20, md: 8*30}} style={{backgroundPositionY: "top"}}>
-        <Badge size="xl" m="sm" color="green">Coin Labs Research Program.</Badge>
+        <Badge size="xl" m="sm" color="green">Research Program.</Badge>
         </BackgroundImage>
       </Card.Section>
-      <Title order={4} py="xs" c="dimmed">Researching and developing blockchain technology.</Title>
+      <Title order={4} py="xs" c="dimmed">Bridging experimental research and learning for blockchain excellence.</Title>
       <Divider />
       <Title order={5} py="sm" c="dimmed">Topics</Title>
       <Title order={6} py="xs">Accessible micro-payments</Title>
