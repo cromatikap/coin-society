@@ -1,4 +1,4 @@
-import { Flex, Title, BackgroundImage, useMantineTheme, Button } from "@mantine/core";
+import { Flex, Title, BackgroundImage, useMantineTheme, Button, Text } from "@mantine/core";
 import css from "./Index.module.css";
 import SideImage from "@/public/nicolas-thomas-wKlqqfNTLsI-unsplash.jpg";
 import { IconBrandGithub } from "@tabler/icons-react";
@@ -21,7 +21,12 @@ export default function LandingScreen() {
         pl={{base: 0, md: "xl"}}
       >
         <Title order={1} ta={{base: "center", md: "left"}} lts="4px" c="violet" fw="900" size={48}>coin society</Title>
-        <Title order={2} ta={{base: "center", md: "left"}} lts="1px" style={{color: theme.colors.dark[9]}}>Blockchain technology research academy.</Title>
+        <Title order={2} ta={{base: "center", md: "left"}} lts="1px" style={{color: theme.colors.dark[9]}}>
+          Blockchain technology Institute.<br />
+          <Text py="xs">
+          Research, experiments and learning laboratory.
+          </Text>
+        </Title>
         <Button onClick={openRepoURL} my="xl" variant="outline" color="dark" size="sm" leftSection={<IconBrandGithub />}>
           Contribute
         </Button>
