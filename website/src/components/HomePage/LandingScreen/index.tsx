@@ -15,7 +15,7 @@ export default function LandingScreen() {
       <Flex
         className={css.gradientBackground}
         direction={"column"}
-        flex="1.618"
+        flex="1"
         gap="md"
         align={{base: "center", md: "start"}}
         pl={{base: 0, md: "xl"}}
@@ -31,7 +31,7 @@ export default function LandingScreen() {
           Contribute
         </Button>
       </Flex> 
-      <BackgroundImage visibleFrom="md" src={SideImage.src} flex="2" h="100vh"/>
+      <BackgroundImage visibleFrom="md" src={SideImage.src} flex="1.618" h="100vh"/>
     </Flex>
   );
 }
