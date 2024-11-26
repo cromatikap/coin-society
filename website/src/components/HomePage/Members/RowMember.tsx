@@ -4,15 +4,17 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, Ico
 import { chainExplorer } from "@/config";
 import ChainExplorer from "@/components/ChainExplorer";
 import {LinkExt} from "@/components/Utils";
+import { BitcoinAddress } from "@/types";
 
 export default function RowMember(props: Member) {
   const identity = props.identity;
+  const isAddress = /^bc1q[0-9a-z]{38}$/.test(props.address);
 
   return <Table.Tr>
     <Table.Td>
-      {props.address
-        ? <ChainExplorer address={props.address} />
-        : <Text c="dimmed" ta="right">candidate</Text>
+      {isAddress
+        ? <ChainExplorer address={props.address as BitcoinAddress} />
+        : <Text c="dimmed" ta="right">{props.address}</Text>
       }
     </Table.Td>
     <Table.Td>

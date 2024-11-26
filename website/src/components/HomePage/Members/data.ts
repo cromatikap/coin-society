@@ -1,8 +1,9 @@
 import { BitcoinAddress, BitcoinTxid, EthereumAddress, EthereumName, Url } from "@/types";
 
+export type MemberAddress = BitcoinAddress | "candidate" | "eligible candidate";
 export type Member = {
   occupation: string;
-  address: BitcoinAddress | null;
+  address: MemberAddress;
   txRegistration: BitcoinTxid | null;
   certification: boolean;
   identity?: {
@@ -58,43 +59,43 @@ export const members: Member[] = [
   },
   {
     occupation: 'Entrepreneur',
-    address: null,
+    address: "candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'PhD Researcher',
-    address: null,
+    address: "candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'Fullstack developer',
-    address: null,
+    address: "eligible candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'Faith Advisor',
-    address: null,
+    address: "candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'Music Composer',
-    address: null,
+    address: "eligible candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'Network engineer',
-    address: null,
+    address: "eligible candidate",
     txRegistration: null,
     certification: false,
   },
   {
     occupation: 'Minimercado owner',
-    address: null,
+    address: "candidate",
     txRegistration: null,
     certification: false,
   }
