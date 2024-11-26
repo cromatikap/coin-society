@@ -17,9 +17,9 @@ export default function Members() {
         </Table.Tr>
       </Table.Thead>
       <Table.Tbody>
-        {members.map((member) => (
+        {members.map((member, i) => (
           <RowMember
-            key={member.address}
+            key={i}
             occupation={member.occupation}
             address={member.address}
             txRegistration={member.txRegistration}
