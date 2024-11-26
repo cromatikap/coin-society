@@ -19,7 +19,7 @@ export type Member = {
 
 export const members: Member[] = [
   {
-    occupation: 'Alumni',
+    occupation: 'Pioneer alumni',
     address: 'bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9',
     txRegistration: '98e07795a8ca6452088ba64c2de4802c2c16ee733b6718da5a8a436ed31c84ac',
     certification: true,
@@ -88,6 +88,12 @@ export const members: Member[] = [
   },
   {
     occupation: 'Network engineer',
+    address: null,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Minimercado owner',
     address: null,
     txRegistration: null,
     certification: false,
