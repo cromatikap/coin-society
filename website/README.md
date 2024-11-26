@@ -2,6 +2,8 @@
 
 [Home](/README.md) | [**Source code**](/website/) | [Contributor documentation](/CONTRIBUTING.md)
 
+[![Continuous Deployment](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml) [![Continuous Integration](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml)
+
 ## Getting started
 
 ```bash
