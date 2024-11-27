@@ -98,5 +98,11 @@ export const members: Member[] = [
     address: "candidate",
     txRegistration: null,
     certification: false,
+  },
+  {
+    occupation: 'Degen maxi',
+    address: "candidate",
+    txRegistration: null,
+    certification: false,
   }
 ]
