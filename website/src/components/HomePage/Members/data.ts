@@ -59,7 +59,7 @@ export const members: Member[] = [
   },
   {
     occupation: 'Entrepreneur',
-    address: "candidate",
+    address: "bc1q535k6enl43u979veg0cgz0dz3w23tultstkcwq",
     txRegistration: null,
     certification: false,
   },
