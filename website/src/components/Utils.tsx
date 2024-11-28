@@ -1,5 +1,5 @@
 import { ensOrgUrl } from "@/config";
-import { Anchor, Card, Title } from "@mantine/core";
+import { Anchor, Card, Group, Title } from "@mantine/core";
 
 export function LinkExt({href, children}: {href: string, children: React.ReactNode}) {
   return <Anchor href={href} target="_blank" rel="noreferrer" display="flex">
@@ -19,10 +19,19 @@ export function CardPrimary({children}: {children: React.ReactNode}) {
   </Card>
 }
 
-export function Headline({sub, children}: {sub?: string, children: React.ReactNode}) {
+export function CardSecondary({children}: {children: React.ReactNode}) {
+  return <Card shadow="sm" withBorder w="fit-content">
+    {children}
+  </Card>
+}
+
+export function Headline({sub, icon, children}: {sub?: string, icon?: React.ReactElement, children: React.ReactNode}) {
   return <>
     <Title order={2} mb="xs">
-      {children}
+      <Group gap="md">
+        {icon}
+        {children}
+      </Group>
     </Title>
     {sub && <Title order={4} c="dimmed" mb="md">
       {sub}

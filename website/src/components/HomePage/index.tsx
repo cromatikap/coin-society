@@ -7,6 +7,7 @@ import Members from "./Members";
 import Description from "./Description";
 import EducationProgram from "./EducationProgram";
 import ResearchProgram from "./ResearchProgram";
+import Governance from "./Governance";
 
 const GAP = {base: 'sm', sm: 'xl'}
 
@@ -18,18 +19,21 @@ export default function HomePage() {
         <Flex gap={GAP} wrap="wrap" justify="center">
           <Flex flex={1.1} gap={GAP} direction="column">
             <Box>
-              <Description />
+              <EducationProgram />
             </Box>
             <Box>
               <Members />
             </Box>
           </Flex>
-          <Flex flex={1} gap={GAP} direction="column">
+          <Flex flex={1} gap={GAP} direction="column" miw={8*62}>
             <Box>
-              <EducationProgram />
+              <Description />
             </Box>
             <Box>
               <ResearchProgram />
+            </Box>
+            <Box>
+              <Governance />
             </Box>
           </Flex>
         </Flex>

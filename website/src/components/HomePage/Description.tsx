@@ -4,8 +4,10 @@ import {Headline, CardPrimary, LinkOrg} from "../Utils";
 
 export default function Description() {
   return <CardPrimary>
-    <Headline sub="Demistifying and democratizing blockchain technology.">
-      About.
+    <Headline 
+      sub="Demistifying and democratizing blockchain technology."
+    >
+      What is it about?
     </Headline>
     <Text fw={500} mb="md">
       <LinkOrg /> is a non-profit foundation of researchers to experiment decentralized circular economy, governance consensus using environmentally sustainable solutions.

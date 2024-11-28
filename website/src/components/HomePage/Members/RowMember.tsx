@@ -12,10 +12,12 @@ export default function RowMember(props: Member) {
 
   return <Table.Tr>
     <Table.Td>
-      {isAddress
-        ? <ChainExplorer address={props.address as BitcoinAddress} />
-        : <Text c="dimmed" ta="right">{props.address}</Text>
-      }
+      <Group justify="flex-end">
+        {isAddress
+          ? <ChainExplorer address={props.address as BitcoinAddress} />
+          : <Text c="dimmed">{props.address}</Text>
+        }
+      </Group>
     </Table.Td>
     <Table.Td>
       <Group justify="space-between">

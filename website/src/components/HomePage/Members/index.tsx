@@ -2,10 +2,14 @@ import { Card, Table } from "@mantine/core";
 import { members } from "../../../Members";
 import RowMember from "./RowMember";
 import { Headline } from "@/components/Utils";
+import { IconUsers } from "@tabler/icons-react";
 
 export default function Members() {
   return <Card miw={{xs: 600, sm: 700}}>
-    <Headline sub="Certified and aspiring community members.">
+    <Headline
+      sub="Certified and aspiring community members."
+      icon={<IconUsers />}
+    >
       Community.
     </Headline>
     <Table>
