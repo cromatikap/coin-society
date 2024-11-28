@@ -44,13 +44,7 @@ export const members: Member[] = [
     txRegistration: '317f89c35c330e70c4d50a664c07d46f29dd41aea2dfd5c4a5366696448d1e2e',
     certification: true,
     identity: {
-      emoji: '👨‍💻',
-      eth: {
-        ens: 'cromatikap.eth',
-        address: '0xeEEe8f7922E99ce6CEd5Cb2DaEdA5FE80Df7C95e'
-      },
-      github: 'https://github.com/cromatikap',
-      x: 'https://twitter.com/cromatikap',
+      emoji: '👨‍💻'
     }
   },
   {
