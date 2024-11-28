@@ -25,7 +25,7 @@ export default function HomePage() {
               <Members />
             </Box>
           </Flex>
-          <Flex flex={1} gap={GAP} direction="column" miw={8*62}>
+          <Flex flex={1} gap={GAP} direction="column" miw={{sm: 8*54}}>
             <Box>
               <Description />
             </Box>

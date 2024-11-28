@@ -7,7 +7,7 @@ import {LinkExt} from "./Utils";
 import ButtonCopy from "./ButtonCopy";
 
 export default function ChainExplorer(props: { address: BitcoinAddress }) {
-  return <Group gap="xs" w="fit-content">
+  return <Group gap="xs" w="fit-content" wrap="nowrap">
     <LinkExt href={chainExplorer.btc.address + props.address}>
       <Box hiddenFrom="xs">
         <IconUserBitcoin />
