@@ -1,5 +1,5 @@
 import { Box, Button, Group, Table, Tooltip, Text } from "@mantine/core";
-import type { Member } from "./data";
+import type { Member } from "../../../Members";
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
 import ChainExplorer from "@/components/ChainExplorer";

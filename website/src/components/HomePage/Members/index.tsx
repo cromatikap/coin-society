@@ -1,5 +1,5 @@
 import { Card, Table } from "@mantine/core";
-import { members } from "./data";
+import { members } from "../../../Members";
 import RowMember from "./RowMember";
 import { Headline } from "@/components/Utils";
 
