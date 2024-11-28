@@ -33,17 +33,16 @@ export default function RowMember(props: Member) {
       </Group>
     </Table.Td>
     <Table.Td visibleFrom="sm">
-      {identity && <Socials links={identity} />}
+      {identity && <Socials identity={identity} />}
     </Table.Td>
   </Table.Tr>
 }
 
-function Socials({links}: {links: Member['identity']}) {
-  if(!links) return;
-
-  const { github, instagram, linkedin, x, eth } = links;
+function Socials({identity}: {identity: Member['identity']}) {
+  const { emoji, github, instagram, linkedin, x, eth } = identity;
   
-  return links && <Group align="center" gap="xs">
+  return <Group align="center" gap="xs">
+    {emoji}
     {eth?.address && 
       <LinkExt href={eth.ens ? chainExplorer.eth.ens + eth.ens : chainExplorer.eth.address + eth.address}>
         <Tooltip label="Ethereum address">
