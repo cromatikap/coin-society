@@ -1,6 +1,6 @@
-# [coin-society.eth](https://coin-society.org) - Contributor documentation
+# [coin-society.eth](https://coin-society.org) - Misc.
 
-[Home](./README.md) | [Source code](./website/) | [**Contributor documentation**](./CONTRIBUTING.md)
+[Home](/README.md) | [Website](/website/) | [Certification](/certification/) | [**Misc.**](/CONTRIBUTING.md)
 
 ## Thank you
 
