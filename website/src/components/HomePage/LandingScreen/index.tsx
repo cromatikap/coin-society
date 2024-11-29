@@ -1,6 +1,6 @@
 import { Flex, Title, BackgroundImage, useMantineTheme, Button, Text } from "@mantine/core";
 import css from "./Index.module.css";
-import SideImage from "@/public/nicolas-thomas-wKlqqfNTLsI-unsplash.jpg";
+import SideImage from "@/public/jesus.jpeg";
 import { IconBrandGithub } from "@tabler/icons-react";
 
 export default function LandingScreen() {
