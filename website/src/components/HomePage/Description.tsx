@@ -1,9 +1,9 @@
-import { Title, Text } from "@mantine/core";
+import { Title, Text, Card } from "@mantine/core";
 import FAQ from "./FAQ";
-import {Headline, CardPrimary, LinkOrg} from "../Utils";
+import {Headline, LinkOrg} from "../Utils";
 
 export default function Description() {
-  return <CardPrimary>
+  return <Card>
     <Headline 
       sub="Demistifying and democratizing blockchain technology."
     >
@@ -14,5 +14,5 @@ export default function Description() {
     </Text>
     <Title order={3}>FAQ.</Title>
     <FAQ />
-  </CardPrimary>
+  </Card>
 }

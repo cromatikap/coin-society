@@ -1,9 +1,8 @@
 import { Card, Divider, List, Title, BackgroundImage, Badge } from "@mantine/core";
-import { CardPrimary } from "@/components/Utils";
 import Picture from "@/public/banner-research.jpg"
 
 export default function ResearchProgram() {
-  return <CardPrimary>
+  return <Card radius="md">
       <Card.Section>
         <BackgroundImage src={Picture.src} h={{base: 8*20, md: 8*30}} style={{backgroundPositionY: "top"}}>
         <Badge size="xl" m="sm" color="green">Research Program.</Badge>
@@ -17,5 +16,5 @@ export default function ResearchProgram() {
         <List.Item>Lightning network</List.Item>
         <List.Item>ERC-20 token on L2 EVM compatible</List.Item>
       </List>
-    </CardPrimary>
+    </Card>
 }
