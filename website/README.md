@@ -1,6 +1,7 @@
-# [coin-society.eth](https://coin-society.org) - Source code
+# [coin-society.eth](https://coin-society.org) - Website
 
-[Home](/README.md) | [**Source code**](/website/) | [Contributor documentation](/CONTRIBUTING.md)
+[Home](/README.md) | [**Website**](/website/) | [Certification](/certification/) | [Misc.](/CONTRIBUTING.md)
+
 
 [![Continuous Deployment](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml) [![Continuous Integration](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml)
 
