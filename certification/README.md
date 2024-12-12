@@ -13,7 +13,7 @@ cd cerification/template
 php -S 127.0.0.1:3000
 ```
 
-Then open your browser at `http://localhost:8000`.
+Then open your browser at `http://localhost:3000`.
 
 ### Dimensions
 
