@@ -73,11 +73,11 @@ center {
   flex-direction: column;
   justify-content: center;
   height: inherit;
-  margin-top: -190px;
 
   h2 {
-    font-size: 1em;
+    font-size: 2em;
     margin: 0;
+    margin-bottom: -28px;
   }
 
   h3 {
