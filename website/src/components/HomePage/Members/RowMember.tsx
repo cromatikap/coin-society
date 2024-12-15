@@ -1,4 +1,4 @@
-import { Box, Button, Group, Table, Tooltip, Text } from "@mantine/core";
+import { Box, Button, Group, Table, Tooltip } from "@mantine/core";
 import type { Member } from "../../../Members";
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
@@ -13,10 +13,10 @@ export default function RowMember(props: Member) {
   return <Table.Tr>
     <Table.Td>
       <Group justify="flex-end">
-        {isAddress
-          ? <ChainExplorer address={props.address as BitcoinAddress} />
-          : <Text c="dimmed">{props.address}</Text>
-        }
+        <ChainExplorer 
+          address={props.address as BitcoinAddress} 
+          showAsLink={isAddress}
+        />
       </Group>
     </Table.Td>
     <Table.Td>
