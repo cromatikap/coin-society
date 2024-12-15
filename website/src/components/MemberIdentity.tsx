@@ -1,5 +1,4 @@
 import { chainExplorer } from "@/config";
-import { BitcoinAddress } from "@/types";
 import { format } from "@/utils";
 import { Box, Group, TextInput, ActionIcon, Text } from "@mantine/core";
 import { IconUserBitcoin, IconPencil } from "@tabler/icons-react";
@@ -7,14 +6,18 @@ import { LinkExt } from "./Utils";
 import ButtonCopy from "./ButtonCopy";
 import { useAddressTag } from "@/hooks/useAddressTag";
 import { KeyboardEvent } from "react";
+import { MemberAddress } from "@/Members";
+import { BitcoinAddress } from "@/types";
 
-interface ChainExplorerProps {
-  address: BitcoinAddress;
+interface MemberIdentityProps {
+  address: MemberAddress;
   showAsLink?: boolean;
 }
 
-export default function ChainExplorer({ address, showAsLink = true }: ChainExplorerProps) {
+export default function MemberIdentity({ address }: MemberIdentityProps) {
   const { tag, isEditing, setIsEditing, saveTag } = useAddressTag(address);
+
+  const isAddress = /^bc1q[0-9a-z]{38}$/.test(address);
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -24,7 +27,7 @@ export default function ChainExplorer({ address, showAsLink = true }: ChainExplo
     }
   };
 
-  const displayAddress = showAsLink ? format(address) : address;
+  const displayAddress = isAddress ? format(address) : address;
 
   const content = isEditing ? (
     <TextInput
@@ -42,7 +45,7 @@ export default function ChainExplorer({ address, showAsLink = true }: ChainExplo
 
   return (
     <Group gap="xs" w="fit-content" wrap="nowrap">
-      {showAsLink ? (
+      {isAddress ? (
         <LinkExt href={chainExplorer.btc.address + address}>
           <Box hiddenFrom="xs">
             <IconUserBitcoin />
@@ -65,7 +68,7 @@ export default function ChainExplorer({ address, showAsLink = true }: ChainExplo
         >
           <IconPencil size="1rem" />
         </ActionIcon>
-        {showAsLink && <ButtonCopy address={address} />}
+        {isAddress && <ButtonCopy address={address as BitcoinAddress} />}
       </Group>
     </Group>
   );

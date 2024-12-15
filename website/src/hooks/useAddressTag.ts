@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { BitcoinAddress } from '@/types';
+import { MemberAddress } from '@/Members';
 
 const STORAGE_KEY = 'btc-address-tags';
 
-export function useAddressTag(address: BitcoinAddress) {
+export function useAddressTag(address: MemberAddress) {
   const [tag, setTag] = useState<string>('');
   const [isEditing, setIsEditing] = useState(false);
 

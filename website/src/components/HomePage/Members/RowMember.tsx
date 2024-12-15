@@ -2,21 +2,16 @@ import { Box, Button, Group, Table, Tooltip } from "@mantine/core";
 import type { Member } from "../../../Members";
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
-import ChainExplorer from "@/components/ChainExplorer";
+import MemberIdentity from "@/components/MemberIdentity";
 import {LinkExt} from "@/components/Utils";
-import { BitcoinAddress } from "@/types";
 
 export default function RowMember(props: Member) {
   const identity = props.identity;
-  const isAddress = /^bc1q[0-9a-z]{38}$/.test(props.address);
 
   return <Table.Tr>
     <Table.Td>
       <Group justify="flex-end">
-        <ChainExplorer 
-          address={props.address as BitcoinAddress} 
-          showAsLink={isAddress}
-        />
+        <MemberIdentity address={props.address} />
       </Group>
     </Table.Td>
     <Table.Td>
