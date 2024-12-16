@@ -1,4 +1,4 @@
-import ChainExplorer from "@/components/ChainExplorer";
+import MemberIdentity from "@/components/MemberIdentity";
 import {Headline, CardSecondary} from "@/components/Utils";
 import { Stack, Group, Tooltip, Button, Card } from "@mantine/core";
 import { IconBuildingBank, IconDropletHeart, IconUser, IconUserCheck } from "@tabler/icons-react";
@@ -25,9 +25,9 @@ export default function Governance() {
               </Group>
             </Button>
           </Tooltip>
-          <ChainExplorer address="bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9" />
-          <ChainExplorer address="bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh" />
-          <ChainExplorer address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx" />
+          <MemberIdentity address="bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9" />
+          <MemberIdentity address="bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh" />
+          <MemberIdentity address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx" />
         </Stack>
       </Group>
     </CardSecondary>

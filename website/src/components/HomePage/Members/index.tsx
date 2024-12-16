@@ -24,6 +24,7 @@ export default function Members() {
         {members.map((member, i) => (
           <RowMember
             key={i}
+            index={i}
             occupation={member.occupation}
             address={member.address}
             txRegistration={member.txRegistration}
