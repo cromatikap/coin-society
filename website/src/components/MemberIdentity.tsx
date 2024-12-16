@@ -11,11 +11,11 @@ import { BitcoinAddress } from "@/types";
 
 interface MemberIdentityProps {
   address: MemberAddress;
-  showAsLink?: boolean;
+  index?: number;
 }
 
-export default function MemberIdentity({ address }: MemberIdentityProps) {
-  const { tag, isEditing, setIsEditing, saveTag } = useAddressTag(address);
+export default function MemberIdentity({ address, index }: MemberIdentityProps) {
+  const { tag, isEditing, setIsEditing, saveTag } = useAddressTag(address, index);
 
   const isAddress = /^bc1q[0-9a-z]{38}$/.test(address);
 

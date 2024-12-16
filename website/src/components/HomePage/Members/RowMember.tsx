@@ -5,13 +5,13 @@ import { chainExplorer } from "@/config";
 import MemberIdentity from "@/components/MemberIdentity";
 import {LinkExt} from "@/components/Utils";
 
-export default function RowMember(props: Member) {
+export default function RowMember(props: Member & { index: number }) {
   const identity = props.identity;
 
   return <Table.Tr>
     <Table.Td>
       <Group justify="flex-end">
-        <MemberIdentity address={props.address} />
+        <MemberIdentity address={props.address} index={props.index} />
       </Group>
     </Table.Td>
     <Table.Td>
