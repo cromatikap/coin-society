@@ -29,16 +29,18 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
 
   const displayAddress = isAddress ? format(address) : address;
 
+  const inputProps = {
+    defaultValue: tag,
+    placeholder: displayAddress,
+    onKeyDown: handleKeyDown,
+    onBlur: (e: React.FocusEvent<HTMLInputElement>) => saveTag(e.currentTarget.value),
+    autoFocus: true,
+    size: "xs" as const,
+    w: {base: 8*8, xs: 150},
+  };
+
   const content = isEditing ? (
-    <TextInput
-      defaultValue={tag}
-      placeholder={displayAddress}
-      onKeyDown={handleKeyDown}
-      onBlur={(e) => saveTag(e.currentTarget.value)}
-      autoFocus
-      size="xs"
-      w="auto"
-    />
+    <TextInput {...inputProps} />
   ) : (
     tag || displayAddress
   );
@@ -48,7 +50,15 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
       {isAddress ? (
         <LinkExt href={chainExplorer.btc.address + address}>
           <Box hiddenFrom="xs">
-            <IconUserBitcoin />
+            {isEditing ? (
+              <TextInput {...inputProps} />
+            ) : (
+              tag ? (
+                <Text ff="monospace">{tag}</Text>
+              ) : (
+                <IconUserBitcoin />
+              )
+            )}
           </Box>
           <Box visibleFrom="xs" ff="monospace">
             {content}
