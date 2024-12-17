@@ -8,7 +8,9 @@ First off, thanks for taking the time to contribute! ❤️
 
 This document like many of other stuffs around here are WIP, all types of contributions are encouraged and valued. 🙏
 
-### Add a member
+---
+
+## Add a member
 
 Feel free to propose new members! To do so, add your friend into the `members` array and open a Pull Request :)
 
