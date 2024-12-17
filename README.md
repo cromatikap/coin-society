@@ -1,6 +1,6 @@
 # [coin-society.eth](https://coin-society.org) - Home
 
-[**Home**](/) | [Website](/website/) | [Certification](/certification/) | [Stable Sat](/stable-sat/)
+[**Home**](/) | [Website](/website/) | [Certification](/certification/) | [Stable Sat](/stable-sat/) | [Contributing](/CONTRIBUTING.md)
 
 ![banner-research](https://github.com/user-attachments/assets/d0276b4c-8c07-484c-be03-8a46d8d942d1)
 
