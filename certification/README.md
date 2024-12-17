@@ -1,6 +1,6 @@
 # [coin-society.eth](https://coin-society.org) - Certification
 
-[Home](/) | [Website](/website/) | [**Certification**](/certification/) | [Misc.](/CONTRIBUTING.md)
+[Home](/) | [Website](/website/) | [**Certification**](/certification/) | [Stable Sat](/stable-sat/)
 
 <img width="717" alt="Screenshot 2024-12-12 at 12 16 47" src="https://github.com/user-attachments/assets/be9bcfb5-df42-4b14-b2c7-3894f81dbc7c" />
 
