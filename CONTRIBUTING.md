@@ -1,6 +1,6 @@
 # [coin-society.eth](https://coin-society.org) - Contributing
 
-[Home](/) | [Website](/website/) | [Certification](/certification/) | [**Misc.**](/CONTRIBUTING.md)
+[Home](/) | [Website](/website/) | [Certification](/certification/) | [Stable Sat](/stable-sat/) | [**Misc.**](/CONTRIBUTING.md)
 
 ## Contributing to coin-society
 
