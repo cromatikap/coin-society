@@ -1,36 +1,15 @@
-# [coin-society.eth](https://coin-society.org) - Misc.
+# [coin-society.eth](https://coin-society.org) - Contributing
 
 [Home](/) | [Website](/website/) | [Certification](/certification/) | [**Misc.**](/CONTRIBUTING.md)
 
-## Thank you
+## Contributing to coin-society
 
-First of all, if you have registered with [coin-society.eth](https://app.ens.domains/coin-society.eth), congratulation for your first contribution 🥳
+First off, thanks for taking the time to contribute! ❤️
 
-Thank you for taking the time to contribute for the broader adoption of [open source software](https://en.wikipedia.org/wiki/Open_source) and [peer to peer](https://en.wikipedia.org/wiki/Peer-to-peer) network for a better common world ❤️
+This document like many of other stuffs around here are WIP, all types of contributions are encouraged and valued. 🙏
 
-> And whatever you do, do it heartily, as to the Lord and not to men ~ Colossians 3:23
+### Add a member
 
-## (WIP) Documentation
+Feel free to propose new members! To do so, add your friend into the `members` array and open a Pull Request :)
 
-### Use case example
-
-> We just split a bill using bitcoin, the future is here - bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh
-
-One member offered to pay the meal by card and equalize with Bitcoin:
-- [4ffbc83a21de130c86338f6234db07bad76d6f642dad64a70f0436038fe27e95](https://mempool.space/tx/4ffbc83a21de130c86338f6234db07bad76d6f642dad64a70f0436038fe27e95)
-- [681d42aa2f625f5797eaa681a73f1758081053a47c23fd5a207009101a97b850](https://mempool.space/tx/681d42aa2f625f5797eaa681a73f1758081053a47c23fd5a207009101a97b850)
-
-### Tokenonomics
-
-```mermaid
----
-title: liquidity flow (BTC)
----
-flowchart TD
-    Faucet@{ shape: flip-tri, label: "Input: faucet" } ==register==> Member((member))
-    Commercial@{ shape: flip-tri, label: "Input: TBD" } -- Commercial activities --> TBDsociety
-    Member o-.-o TBDsociety@{ shape: procs, label: "coin-society"}
-    TBDsociety -- WIP: find an incentive --> Faucet
-    TBDsociety -- collaborate --> TBDsociety
-    TBDsociety -- spend --> Output@{ shape: tri }
-```
+https://github.com/cromatikap/coin-society/blob/a87a757896780c5635663bcd683bcff15179a3a5/website/src/Members.ts#L22-L31
