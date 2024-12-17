@@ -1,4 +1,6 @@
-# Stable sat
+# [coin-society.eth](https://coin-society.org) - Stable Sat
+
+[Home](/) | [Website](/website/) | [Certification](/certification/) | [**Stable Sat**](/stable-sat/)
 
 ```mermaid
 ---
