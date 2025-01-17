@@ -32,7 +32,7 @@ export default function LandingScreen() {
             Contribute
           </Button>
           <Button onClick={() => window.location.href = '/community'} variant="filled" color="violet" size="sm">
-            Jump in
+            Community
           </Button>
         </Flex>
       </Flex> 
