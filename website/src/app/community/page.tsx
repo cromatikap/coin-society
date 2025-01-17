@@ -9,7 +9,7 @@ export default function CommunityPage() {
   return (
     <AppShell>
       <Navigation />
-      <AppShell.Main p={{ base: 'sm', sm: 'xl' }}>
+      <AppShell.Main p={{ base: 0, sm: 'xl' }}>
         <Members />
         <Governance />
       </AppShell.Main>

@@ -36,7 +36,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
     onBlur: (e: React.FocusEvent<HTMLInputElement>) => saveTag(e.currentTarget.value),
     autoFocus: true,
     size: "xs" as const,
-    w: {base: 8*8, xs: 150},
+    w: {base: 7*8, xs: 150},
   };
 
   const content = isEditing ? (
