@@ -9,15 +9,17 @@ import {LinkExt} from "@/components/Utils";
 export default function RowMember(props: Member & { index: number }) {
 
   return <Table.Tr>
-    <Table.Td>
-      <Group justify="flex-end">
+    <Table.Td w={300}>
+      <Group justify="flex-end" wrap="nowrap">
         <MemberIdentity address={props.address} index={props.index} />
       </Group>
     </Table.Td>
-    <Table.Td>
-      <Group justify="space-between">
-        {props.occupation}
-        <Group visibleFrom="xs">
+    <Table.Td w={300}>
+      <Group justify="space-between" wrap="nowrap">
+        <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          {props.occupation}
+        </Box>
+        <Group visibleFrom="xs" wrap="nowrap">
           {props.txRegistration && 
             <LinkExt href={chainExplorer.btc.txid + props.txRegistration}>
               <Tooltip label="registration">
@@ -29,7 +31,7 @@ export default function RowMember(props: Member & { index: number }) {
         </Group>
       </Group>
     </Table.Td>
-    <Table.Td visibleFrom="sm">
+    <Table.Td w={300} visibleFrom="sm">
       <Socials member={props} />
     </Table.Td>
   </Table.Tr>
@@ -38,14 +40,17 @@ export default function RowMember(props: Member & { index: number }) {
 function Socials({member}: {member: Member}) {
   const { github, instagram, linkedin, x, eth } = member.identity || {};
   
-  return <Group align="center" gap="xs">
+  return <Group align="center" gap="xs" wrap="nowrap">
     {generateEmoji(member.address)}
     {eth?.address && 
       <LinkExt href={eth.ens ? chainExplorer.eth.ens + eth.ens : chainExplorer.eth.address + eth.address}>
         <Tooltip label="Ethereum address">
           {eth.ens
             ? <Box>
-                <Button visibleFrom="md" variant="transparent" size="compact-sm" p="0">{eth.ens}</Button>
+                <Button visibleFrom="md" variant="transparent" size="compact-sm" p="0" 
+                  style={{ maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {eth.ens}
+                </Button>
                 <Box hiddenFrom="md" display="flex">
                   <IconCurrencyEthereum />
                 </Box>
