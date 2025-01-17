@@ -39,6 +39,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
     w: {base: 7*8, xs: 150},
   };
 
+  const displayTag = tag && tag.length > 6 ? tag.slice(0, 5) + '…' : tag;
   const content = isEditing ? (
     <TextInput {...inputProps} />
   ) : (
@@ -54,7 +55,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
               <TextInput {...inputProps} />
             ) : (
               tag ? (
-                <Text ff="monospace">{tag}</Text>
+                <Text ff="monospace">{displayTag}</Text>
               ) : (
                 <IconUserBitcoin />
               )
