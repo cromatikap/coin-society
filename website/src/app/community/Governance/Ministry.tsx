@@ -15,7 +15,7 @@ interface MinistryProps {
 
 export default function Ministry(props: MinistryProps) {
   return <CardSecondary>
-    <Group align="start">
+    <Group align="start" justify="center">
       <Stack align="center">
         <Wallet name={props.name} address={props.address} />
         <IconDropletHeart size={8*13} />
@@ -46,7 +46,7 @@ function Wallet(props: {name: string, address: BitcoinAddress}) {
       <ButtonCopy address={props.address} />
     </Box>
     <LinkExt href={chainExplorer.btc.address + props.address}>
-      <Title order={3} mr="md">{props.name}</Title>
+      <Title order={3}>{props.name}</Title>
     </LinkExt> 
   </Group>
 }
