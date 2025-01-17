@@ -27,9 +27,14 @@ export default function LandingScreen() {
           Research, experiments and learning laboratory.
           </Text>
         </Title>
-        <Button onClick={openRepoURL} my="xl" variant="outline" color="dark" size="sm" leftSection={<IconBrandGithub />}>
-          Contribute
-        </Button>
+        <Flex gap="md" my="xl">
+          <Button onClick={openRepoURL} variant="outline" color="dark" size="sm" leftSection={<IconBrandGithub />}>
+            Contribute
+          </Button>
+          <Button onClick={() => window.location.href = '/community'} variant="filled" color="violet" size="sm">
+            Jump in
+          </Button>
+        </Flex>
       </Flex> 
       <BackgroundImage visibleFrom="md" src={SideImage.src} flex="1.618" h="100vh"/>
     </Flex>

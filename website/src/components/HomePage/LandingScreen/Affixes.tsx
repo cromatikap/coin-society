@@ -13,7 +13,7 @@ export default function Affixes() {
             style={transitionStyles}
             onClick={() => scrollTo({ y: 600 })}
           >
-            gm
+            About
           </Button>
         )}
       </Transition>
