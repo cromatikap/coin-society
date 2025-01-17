@@ -1,6 +1,6 @@
 "use client";
 
-import { Group, Button, Image } from "@mantine/core";
+import { Group, Button, Image, Tooltip } from "@mantine/core";
 import { usePathname, useRouter } from "next/navigation";
 import { IconExternalLink } from '@tabler/icons-react';
 
@@ -18,15 +18,17 @@ export default function Navigation() {
   const router = useRouter();
 
   return (
-    <Group justify="flex-start" align="center" p="md" gap="xl">
-      <Image
-        src="/favicon.ico"
-        alt="Coin Society Logo"
-        w={32}
-        h={32}
-        style={{ cursor: 'pointer' }}
-        onClick={() => router.push('/')}
-      />
+    <Group justify="flex-start" align="center" p="md">
+      <Tooltip label="coin-society.org" position="right" withArrow>
+        <Image
+          src="/favicon.ico"
+          alt="Coin Society Logo"
+          w={32}
+          h={32}
+          style={{ cursor: 'pointer' }}
+          onClick={() => router.push('/')}
+        />
+      </Tooltip>
       <Group>
         {routes.map((route) => (
           route.external ? (
