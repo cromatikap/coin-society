@@ -1,7 +1,11 @@
 export const chainExplorer = {
+  // btc: {
+  //   address: "https://blockchair.com/bitcoin/address/",
+  //   txid: "https://blockchair.com/bitcoin/transaction/",
+  // },
   btc: {
-    address: "https://blockchair.com/bitcoin/address/",
-    txid: "https://blockchair.com/bitcoin/transaction/",
+    address: "https://mempool.space/address/",
+    txid: "https://mempool.space/tx/",
   },
   eth: {
     ens: "https://rainbow.me/profile/",

@@ -57,7 +57,7 @@ export const members: Member[] = [
     }
   },
   {
-    occupation: 'Barista',
+    occupation: 'Faith Advisor',
     address: 'bc1qd528shvfhls4k79z8ed385l7jz58ur90ufl9a7',
     txRegistration: 'af855f8dcaad737e05365733b89995c7ffd6ab75f46021ff2b4f5b318297153f',
     certification: false,
@@ -72,6 +72,24 @@ export const members: Member[] = [
     certification: false,
     identity: {
       emoji: '💡',
+    }
+  },
+  {
+    occupation: 'Minimarket Owner',
+    address: "bc1qq7mvrn4yrnsvy2kjz649dvwlna22tex68hd9cn",
+    txRegistration: "aa68a1d0bdcd6203835421c321e92617b2f0d26f70d02edbef2dd625c14342a0",
+    certification: false,
+    identity: {
+      emoji: '🪄',
+    }
+  },
+  {
+    occupation: 'Passionate Cuber',
+    address: "bc1qrcc7e63wnp7eh5pkz5n9eqy0nmpdtw04qz46pc",
+    txRegistration: "",
+    certification: false,
+    identity: {
+      emoji: '🪄',
     }
   },
   {
@@ -93,30 +111,12 @@ export const members: Member[] = [
     }
   },
   {
-    occupation: 'Faith Advisor',
-    address: "candidate",
-    txRegistration: null,
-    certification: false,
-    identity: {
-      emoji: '👑',
-    }
-  },
-  {
     occupation: 'Network engineer',
     address: "eligible candidate",
     txRegistration: null,
     certification: false,
     identity: {
       emoji: '📡',
-    }
-  },
-  {
-    occupation: 'Minimercado owner',
-    address: "candidate",
-    txRegistration: null,
-    certification: false,
-    identity: {
-      emoji: '🪄',
     }
   },
   {
