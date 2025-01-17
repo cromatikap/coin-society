@@ -13,9 +13,9 @@ export default function Members() {
     <Table>
       <Table.Thead>
         <Table.Tr>
-          <Table.Th w={300}>Address</Table.Th>
-          <Table.Th w={300}>Occupation</Table.Th>
-          <Table.Th w={300} visibleFrom="sm">Identity</Table.Th>
+          <Table.Th w={300}></Table.Th>
+          <Table.Th w={300}></Table.Th>
+          <Table.Th w={300} visibleFrom="sm"></Table.Th>
         </Table.Tr>
       </Table.Thead>
       <Table.Tbody>
