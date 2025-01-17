@@ -19,13 +19,13 @@ export default function HomePage() {
             <Box>
               <Description />
             </Box>
+            <Box>
+              <ResearchProgram />
+            </Box>
           </Flex>
           <Flex flex={1} gap={GAP} direction="column" miw={{sm: 8*54}}>
             <Box>
               <EducationProgram />
-            </Box>
-            <Box>
-              <ResearchProgram />
             </Box>
           </Flex>
         </Flex>
