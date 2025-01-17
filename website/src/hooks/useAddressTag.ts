@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MemberAddress } from '@/Members';
+import { CANDIDATE, ELIGIBLE_CANDIDATE } from '@/config';
 
 const STORAGE_KEY = 'btc-address-tags';
 const CANDIDATES_KEY = 'candidates-tags';
@@ -13,7 +14,7 @@ export function useAddressTag(address: MemberAddress, index?: number) {
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
-    if (address === 'candidate' || address === 'eligible candidate') {
+    if (address === CANDIDATE || address === ELIGIBLE_CANDIDATE) {
       if (typeof index !== 'number') {
         console.warn('Index is required for candidate tags');
         return;
@@ -34,7 +35,7 @@ export function useAddressTag(address: MemberAddress, index?: number) {
   }, [address, index]);
 
   const saveTag = (newTag: string) => {
-    if (address === 'candidate' || address === 'eligible candidate') {
+    if (address === CANDIDATE || address === ELIGIBLE_CANDIDATE) {
       if (typeof index !== 'number') {
         console.warn('Index is required for candidate tags');
         return;

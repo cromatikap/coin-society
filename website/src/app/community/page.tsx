@@ -1,9 +1,9 @@
 "use client";
 
 import { AppShell } from "@mantine/core";
-import Members from "@/components/HomePage/Members";
+import Members from "./Members";
+import Governance from "./Governance";
 import Navigation from "@/components/Navigation";
-import Governance from "@/components/HomePage/Governance";
 
 export default function CommunityPage() {
   return (

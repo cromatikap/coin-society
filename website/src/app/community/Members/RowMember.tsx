@@ -1,12 +1,12 @@
 import { Box, Button, Group, Table, Tooltip } from "@mantine/core";
-import type { Member } from "../../../Members";
+import type { Member } from "@/Members";
+import { generateEmoji } from "@/utils";
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconCertificate, IconCurrencyEthereum, IconFileBitcoin } from "@tabler/icons-react";
 import { chainExplorer } from "@/config";
 import MemberIdentity from "@/components/MemberIdentity";
 import {LinkExt} from "@/components/Utils";
 
 export default function RowMember(props: Member & { index: number }) {
-  const identity = props.identity;
 
   return <Table.Tr>
     <Table.Td>
@@ -30,16 +30,16 @@ export default function RowMember(props: Member & { index: number }) {
       </Group>
     </Table.Td>
     <Table.Td visibleFrom="sm">
-      {identity && <Socials identity={identity} />}
+      <Socials member={props} />
     </Table.Td>
   </Table.Tr>
 }
 
-function Socials({identity}: {identity: Member['identity']}) {
-  const { emoji, github, instagram, linkedin, x, eth } = identity;
+function Socials({member}: {member: Member}) {
+  const { github, instagram, linkedin, x, eth } = member.identity || {};
   
   return <Group align="center" gap="xs">
-    {emoji}
+    {generateEmoji(member.address)}
     {eth?.address && 
       <LinkExt href={eth.ens ? chainExplorer.eth.ens + eth.ens : chainExplorer.eth.address + eth.address}>
         <Tooltip label="Ethereum address">
@@ -55,9 +55,9 @@ function Socials({identity}: {identity: Member['identity']}) {
         </Tooltip>
       </LinkExt>
     }
-    {x && <LinkExt href={x}><IconBrandX /></LinkExt>}
-    {instagram && <LinkExt href={instagram}><IconBrandInstagram /></LinkExt>}
     {github && <LinkExt href={github}><IconBrandGithub /></LinkExt>}
+    {instagram && <LinkExt href={instagram}><IconBrandInstagram /></LinkExt>}
     {linkedin && <LinkExt href={linkedin}><IconBrandLinkedin /></LinkExt>}
+    {x && <LinkExt href={x}><IconBrandX /></LinkExt>}
   </Group>
 }
