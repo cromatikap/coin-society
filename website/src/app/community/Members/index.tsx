@@ -1,12 +1,12 @@
 import { Table } from "@mantine/core";
 import { members } from "@/Members";
 import RowMember from "./RowMember";
-import { IconUsers } from "@tabler/icons-react";
+import { IconUsersGroup } from "@tabler/icons-react";
 import { Card } from "@/components/Layout";
 
 export default function Members() {
   return <Card 
-    icon={<IconUsers />}
+    icon={<IconUsersGroup />}
     title="Community."
     sub="Certified and aspiring community members."
   >
