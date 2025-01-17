@@ -1,6 +1,7 @@
-import { Flex, Title, BackgroundImage, useMantineTheme, Button, Text } from "@mantine/core";
+import { Flex, Title, BackgroundImage, useMantineTheme, Button, Text, Image } from "@mantine/core";
 import css from "./Index.module.css";
 import SideImage from "@/public/jesus.jpeg";
+import Icon from "@/public/icon.png";
 import { IconBrandGithub } from "@tabler/icons-react";
 
 export default function LandingScreen() {
@@ -20,6 +21,7 @@ export default function LandingScreen() {
         align={{base: "center", md: "start"}}
         pl={{base: 0, md: "xl"}}
       >
+        <Image src={Icon.src} alt="Coin Society Logo" w={20*8} h={20*8} mx="auto" mb="lg" hiddenFrom="md" />
         <Title order={1} ta={{base: "center", md: "left"}} lts="4px" c="violet" fw="900" size={48}>coin society</Title>
         <Title order={2} ta={{base: "center", md: "left"}} lts="1px" style={{color: theme.colors.dark[9]}}>
           Blockchain technology Institute.<br />
