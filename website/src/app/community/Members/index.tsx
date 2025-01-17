@@ -1,17 +1,15 @@
-import { Card, Table } from "@mantine/core";
+import { Table } from "@mantine/core";
 import { members } from "@/Members";
 import RowMember from "./RowMember";
-import { Headline } from "@/components/Utils";
 import { IconUsers } from "@tabler/icons-react";
+import { Card } from "@/components/Layout";
 
 export default function Members() {
-  return <Card miw={{xs: 600, sm: 700}}>
-    <Headline
-      sub="Certified and aspiring community members."
-      icon={<IconUsers />}
-    >
-      Community.
-    </Headline>
+  return <Card 
+    icon={<IconUsers />}
+    title="Community."
+    sub="Certified and aspiring community members."
+  >
     <Table>
       <Table.Thead>
         <Table.Tr>

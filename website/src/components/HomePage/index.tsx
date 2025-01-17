@@ -17,12 +17,12 @@ export default function HomePage() {
         <Flex gap={GAP} wrap="wrap" justify="center">
           <Flex flex={1.1} gap={GAP} direction="column">
             <Box>
-              <EducationProgram />
+              <Description />
             </Box>
           </Flex>
           <Flex flex={1} gap={GAP} direction="column" miw={{sm: 8*54}}>
             <Box>
-              <Description />
+              <EducationProgram />
             </Box>
             <Box>
               <ResearchProgram />

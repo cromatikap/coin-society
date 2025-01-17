@@ -1,14 +1,18 @@
 import { Card } from "@mantine/core";
 import { Headline } from "../Utils";
-import { IconUsers } from "@tabler/icons-react";
+import { ReactElement } from "react";
 
-export default function LayoutCard({children}: {children: React.ReactNode}) {
+interface LayoutCardProps {
+  children: React.ReactNode;
+  icon: ReactElement;
+  title: string;
+  sub: string;
+}
+
+export default function LayoutCard({ children, icon, title, sub }: LayoutCardProps) {
   return <Card miw={{xs: 600, sm: 700}}>
-    <Headline
-      sub="Certified and aspiring community members."
-      icon={<IconUsers />}
-    >
-      Community.
+    <Headline sub={sub} icon={icon} >
+      {title}
     </Headline>
     {children}
   </Card>

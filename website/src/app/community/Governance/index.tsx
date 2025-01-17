@@ -1,14 +1,16 @@
 import MemberIdentity from "@/components/MemberIdentity";
-import {Headline, CardSecondary} from "@/components/Utils";
-import { Stack, Group, Tooltip, Button, Card } from "@mantine/core";
+import {CardSecondary} from "@/components/Utils";
+import { Stack, Group, Tooltip, Button } from "@mantine/core";
 import { IconBuildingBank, IconDropletHeart, IconUser, IconUserCheck } from "@tabler/icons-react";
 import Ministry from "./Ministry";
+import { Card } from "@/components/Layout";
 
 export default function Governance() {
-  return <Card>
-    <Headline sub="Ministries." icon={<IconBuildingBank />}>
-      Governance.
-    </Headline>
+  return <Card
+    icon={<IconBuildingBank />}
+    title="Governance."
+    sub="Ministries."
+  >
     <CardSecondary>
       <Group wrap="nowrap">
         <Stack align="center">
