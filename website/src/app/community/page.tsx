@@ -1,18 +1,14 @@
 "use client";
 
-import { AppShell } from "@mantine/core";
+import Layout from "@/components/Layout";
 import Members from "./Members";
 import Governance from "./Governance";
-import Navigation from "@/components/Navigation";
 
 export default function CommunityPage() {
   return (
-    <AppShell>
-      <Navigation />
-      <AppShell.Main p={{ base: 0, sm: 'xl' }}>
-        <Members />
-        <Governance />
-      </AppShell.Main>
-    </AppShell>
+    <Layout>
+      <Members />
+      <Governance />
+    </Layout>
   );
 }
