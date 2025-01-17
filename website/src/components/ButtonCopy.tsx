@@ -6,7 +6,7 @@ export default function ButtonCopy(props: { address: BitcoinAddress }) {
   return <CopyButton value={props.address}>
     {({ copied, copy }) => (
       <Tooltip label="copy address">
-        <Button size="xs" variant="transparent" color={copied ? 'teal' : 'blue'} onClick={copy}>
+        <Button size="xs" p="0" variant="transparent" color={copied ? 'teal' : 'blue'} onClick={copy}>
           {copied ? <IconClipboardCheck /> : <IconCopy />}
         </Button>
       </Tooltip>
