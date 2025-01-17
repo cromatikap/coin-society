@@ -3,11 +3,13 @@ import { LinkOrg } from "@/components/Utils";
 import { StatsRing } from "./StatsRing";
 import { IconDeviceGamepad2, IconHeartBitcoin, IconMoodBitcoin, IconSchool } from "@tabler/icons-react";
 import { Card } from "@/components/Layout";
+
 export default function EducationProgram() {
   return <Card
       icon={<IconSchool />}
       title="Education Program."
       sub="Inclusive for all, regardless of skill set or professional experience."
+      withBorder
     >
       <Text pb="xs">
         We provide an education program for those who want to learn how to use blockchain technology.
