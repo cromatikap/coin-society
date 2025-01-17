@@ -91,5 +91,17 @@ export const members: Member[] = [
     address: ELIGIBLE_CANDIDATE,
     txRegistration: null,
     certification: false,
+  },
+  {
+    occupation: 'Unknown',
+    address: CANDIDATE,
+    txRegistration: null,
+    certification: false,
+  },
+  {
+    occupation: 'Tatoo Artist',
+    address: CANDIDATE,
+    txRegistration: null,
+    certification: false,
   }
 ]
