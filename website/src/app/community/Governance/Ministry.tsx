@@ -4,13 +4,15 @@ import { CardSecondary, LinkExt } from "@/components/Utils";
 import { chainExplorer } from "@/config";
 import { BitcoinAddress } from "@/types";
 import { Box, Button, Group, Stack, Title, Tooltip } from "@mantine/core";
-import { IconDropletHeart, IconUser, IconUserCheck } from "@tabler/icons-react";
+import { IconUser, IconUserCheck } from "@tabler/icons-react";
+import React from "react";
 
 interface MinistryProps {
   name: string;
   address: BitcoinAddress;
   multisig: BitcoinAddress[];
   quorum: number;
+  Icon: React.ReactElement;
 }
 
 export default function Ministry(props: MinistryProps) {
@@ -18,7 +20,7 @@ export default function Ministry(props: MinistryProps) {
     <Group align="start" justify="center">
       <Stack align="center">
         <Wallet name={props.name} address={props.address} />
-        <IconDropletHeart size={8*13} />
+        {React.cloneElement(props.Icon, {size: 8*13})}
       </Stack>
       <Stack gap="xs" align="end">
         <Tooltip label={`multisig ${props.quorum}-to-${props.multisig.length}`}>

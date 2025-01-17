@@ -1,4 +1,4 @@
-import { IconBuildingBank } from "@tabler/icons-react";
+import { IconBuildingBank, IconDropletHeart, IconPlant } from "@tabler/icons-react";
 import Ministry from "./Ministry";
 import { Card } from "@/components/Layout";
 import { Group } from "@mantine/core";
@@ -20,12 +20,21 @@ export default function Governance() {
           "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
         ]}
         quorum={2}
+        Icon={<IconPlant />}
       />
       <Ministry
         name="Faucet 1"
         address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
         multisig={["bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"]}
         quorum={1}
+        Icon={<IconDropletHeart />}
+      />
+      <Ministry
+        name="Faucet 2"
+        address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
+        multisig={["bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"]}
+        quorum={1}
+        Icon={<IconDropletHeart />}
       />
     </Group>
   </Card>
