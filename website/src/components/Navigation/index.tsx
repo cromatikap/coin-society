@@ -6,6 +6,7 @@ import { IconExternalLink } from '@tabler/icons-react';
 
 const routes = [
   { path: "/community", label: "Community" },
+  { path: "/how-to-join", label: "How to join?" },
   { 
     path: "https://beta2.ipal.network/profile/0x1878DE1c17b0828B90D89b4c075Ec7B0FC978B06", 
     label: "Resources",
