@@ -7,11 +7,13 @@ export const MINISTRY_PURPOSES = [
 
 export type Ministry = {
   name: string;
-  address: BitcoinAddress;
-  multisig: BitcoinAddress[];
-  quorum: number;
+  address?: BitcoinAddress;
+  quorum?: number;
   purpose: (typeof MINISTRY_PURPOSES)[number];
-}
+} & (
+  | { coinjoin?: never; quorum: number; multisig: BitcoinAddress[]; }
+  | { multisig?: never; quorum?: never; coinjoin: BitcoinAddress[]; }
+);
 
 export const ministries: Ministry[] = [
   {
@@ -26,17 +28,11 @@ export const ministries: Ministry[] = [
     purpose: "stimulus"
   },
   {
-    name: "Faucet 1",
-    address: "bc1qayz7m844g89mhyvwja246mdd67p8udax8xgekx",
-    multisig: ["bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"],
-    quorum: 1,
-    purpose: "faucet"
-  },
-  {
-    name: "Faucet 2",
-    address: "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh",
-    multisig: ["bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"],
-    quorum: 1,
+    name: "Faucet",
+    coinjoin: [
+      "bc1qayz7m844g89mhyvwja246mdd67p8udax8xgekx",
+      "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"
+    ],
     purpose: "faucet"
   }
 ]
