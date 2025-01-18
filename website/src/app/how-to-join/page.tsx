@@ -4,8 +4,15 @@ import HowToCreateMinistry from "./HowToCreateMinistry";
 
 export default function HowToJoinPage() {
   
-  return <Group justify="center" gap="xl" align="start">
-    <HowToJoin />
-    <HowToCreateMinistry />
+  return <Group justify="stretch" gap="xl" align="start">
+    <HowToJoin
+      miw={{xs: "100%", lg: "48%"}}
+      maw={{xs: "100%", lg: "48%"}}
+      withBorder
+    />
+    <HowToCreateMinistry
+      miw={{xs: "100%", lg: "48%"}}
+      maw={{xs: "100%", lg: "48%"}}
+    />
   </Group>
 } 

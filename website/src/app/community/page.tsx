@@ -5,9 +5,16 @@ import Governance from "./Governance";
 import { Group } from "@mantine/core";
 export default function CommunityPage() {
   return (
-    <Group justify="center" gap="xl" align="start">
-      <Members />
-      <Governance />
+    <Group justify="stretch" gap="xl" align="start">
+      <Members
+        miw={{xs: "100%", lg: "0"}}
+        maw={{xs: "100%", lg: "48%"}}
+        withBorder
+      />
+      <Governance
+        miw={{xs: "100%", lg: "0"}}
+        maw={{xs: "100%", lg: "48%"}}
+      />
     </Group>
   );
 }

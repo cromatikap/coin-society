@@ -4,8 +4,9 @@ import { Card, Title, Subtitle } from "@/components/Layout";
 import { Anchor, Text, List, Tabs, Tooltip } from "@mantine/core";
 import { IconPuzzle } from "@tabler/icons-react";
 import { useState } from "react";
+import type { LayoutCardOptProps } from "@/components/Layout";
 
-export default function HowToJoin() {
+export default function HowToJoin(props: LayoutCardOptProps) {
   const [activeTab, setActiveTab] = useState<string | null>('first-time');
 
   const changeTab = (tab: string) => {
@@ -13,10 +14,10 @@ export default function HowToJoin() {
   }
   
   return <Card
+    {...props}
     icon={<IconPuzzle />}
     title="How to Join?"
     sub="All you need is an empty Bitcoin wallet address."
-    withBorder
   >
     <Tabs value={activeTab} onChange={setActiveTab}>
       <Tabs.List>

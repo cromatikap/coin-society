@@ -1,9 +1,9 @@
 import ButtonCopy from "@/components/ButtonCopy";
 import MemberIdentity from "@/components/MemberIdentity";
-import { CardSecondary, LinkExt } from "@/components/Utils";
+import { LinkExt } from "@/components/Utils";
 import { chainExplorer } from "@/config";
 import { BitcoinAddress } from "@/types";
-import { Box, Button, Group, Stack, Title, Tooltip } from "@mantine/core";
+import { Box, Button, Card, Group, Stack, Title, Tooltip } from "@mantine/core";
 import { IconUser, IconUserCheck } from "@tabler/icons-react";
 import React from "react";
 
@@ -16,7 +16,7 @@ interface MinistryProps {
 }
 
 export default function Ministry(props: MinistryProps) {
-  return <CardSecondary>
+  return <Card w={{base: "100%", xs: "fit-content"}} withBorder>
     <Group align="start" justify="center">
       <Stack align="center">
         <Wallet name={props.name} address={props.address} />
@@ -39,7 +39,7 @@ export default function Ministry(props: MinistryProps) {
         ))}
       </Stack>
     </Group>
-  </CardSecondary>
+  </Card>
 }
 
 function Wallet(props: {name: string, address: BitcoinAddress}) {

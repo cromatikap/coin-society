@@ -3,9 +3,11 @@ import { members } from "@/data";
 import RowMember from "./RowMember";
 import { IconUsersGroup } from "@tabler/icons-react";
 import { Card } from "@/components/Layout";
+import type { LayoutCardOptProps } from "@/components/Layout";
 
-export default function Members() {
+export default function Members(props: LayoutCardOptProps) {
   return <Card 
+    {...props}
     icon={<IconUsersGroup />}
     title="Community."
     sub="Certified and aspiring community members."

@@ -1,17 +1,35 @@
-import { Card as MantineCard, Title as MantineTitle } from "@mantine/core";
+import { Card as MantineCard, Title as MantineTitle, StyleProp } from "@mantine/core";
+import { Property } from 'csstype';
 import { Headline } from "../Utils";
 import { ReactElement } from "react";
 
-interface LayoutCardProps {
+export type LayoutCardOptProps = {
+  withBorder?: boolean;
+  miw?: StyleProp<Property.MinWidth<string | number> | undefined>;
+  maw?: StyleProp<Property.MaxWidth<string | number> | undefined>;
+}
+
+export type LayoutCardProps = {
   children: React.ReactNode;
   icon: ReactElement;
   title: string;
   sub: string;
-  withBorder?: boolean;
-}
+} & LayoutCardOptProps;
 
-export function Card({ children, icon, title, sub, withBorder = false }: LayoutCardProps) {
-  return <MantineCard miw={{xs: 600, sm: 700}} withBorder={withBorder} shadow={withBorder ? "sm" : "none"}>
+export function Card({
+  children,
+  icon,
+  title,
+  sub,
+  withBorder = false,
+  miw = {xs: 600, sm: 700},
+  maw = {}
+}: LayoutCardProps) {
+  return <MantineCard
+    miw={miw} maw={maw}
+    withBorder={withBorder}
+    shadow={withBorder ? "sm" : "none"}
+  >
     <Headline sub={sub} icon={icon}>
       {title}
     </Headline>
