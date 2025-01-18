@@ -27,7 +27,7 @@ export default function HowToCreateMinistry(props: LayoutCardOptProps) {
       <List.Item>4. <Highlight>Quorum</Highlight> (number of members required to sign a spending proposal) - e.g. 2.</List.Item>
     </List>
     <Subtitle>
-      2. Add your ministry to <Anchor target="_blank" href="">
+      2. Add your ministry to <Anchor target="_blank" href="https://github.com/cromatikap/coin-society/blob/1b5e3b0c82299d3ff7651e5332d62943661abed7/website/src/data/Ministries.ts#L18-L40">
         this file
       </Anchor>.
     </Subtitle>

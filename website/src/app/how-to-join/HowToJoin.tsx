@@ -45,7 +45,7 @@ export default function HowToJoin(props: LayoutCardOptProps) {
 
         <Title>If you are a developer:</Title>
         <Text>
-          Add yourself to <Anchor target="_blank" href="https://github.com/cromatikap/coin-society/blob/main/website/src/Members.ts">this file</Anchor>.
+          Add yourself to <Anchor target="_blank" href="https://github.com/cromatikap/coin-society/blob/main/website/src/data/Members.ts">this file</Anchor>.
         </Text>
         <Text>
           Upon reception of your Pull Request, we will review the candidature.<br />
