@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { MemberAddress } from '@/Members';
+import type { MemberAddress } from '@/data';
 import { CANDIDATE, ELIGIBLE_CANDIDATE } from '@/config';
 
 const STORAGE_KEY = 'btc-address-tags';

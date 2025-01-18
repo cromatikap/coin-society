@@ -6,7 +6,7 @@ import { LinkExt } from "./Utils";
 import ButtonCopy from "./ButtonCopy";
 import { useAddressTag } from "@/hooks/useAddressTag";
 import { KeyboardEvent } from "react";
-import { MemberAddress } from "@/Members";
+import type { MemberAddress } from "@/data";
 import { BitcoinAddress } from "@/types";
 
 interface MemberIdentityProps {

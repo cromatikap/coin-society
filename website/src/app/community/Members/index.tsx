@@ -1,5 +1,5 @@
 import { Table } from "@mantine/core";
-import { members } from "@/Members";
+import { members } from "@/data";
 import RowMember from "./RowMember";
 import { IconUsersGroup } from "@tabler/icons-react";
 import { Card } from "@/components/Layout";

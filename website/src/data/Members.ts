@@ -1,4 +1,4 @@
-import { BitcoinAddress, BitcoinTxid, EthereumAddress, EthereumName, Url } from "@/types";
+import type { BitcoinAddress, BitcoinTxid, EthereumAddress, EthereumName, Url } from "@/types";
 import { CANDIDATE, ELIGIBLE_CANDIDATE } from "@/config";
 
 export type MemberAddress = BitcoinAddress | typeof CANDIDATE | typeof ELIGIBLE_CANDIDATE;

@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 
 import { CANDIDATE, ELIGIBLE_CANDIDATE, EMOJI_LIST } from "./config";
-import { MemberAddress } from "./Members";
+import type { MemberAddress } from "@/data";
 import { BitcoinAddress, BitcoinTxid } from "./types";
 
 export const format = (input: BitcoinAddress | BitcoinTxid) => {
