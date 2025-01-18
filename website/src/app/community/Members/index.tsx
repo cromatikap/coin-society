@@ -15,7 +15,7 @@ export default function Members(props: LayoutCardOptProps) {
     <Table>
       <Table.Thead>
         <Table.Tr>
-          <Table.Th w={300}></Table.Th>
+          <Table.Th w={300}>Address book</Table.Th>
           <Table.Th w={300}></Table.Th>
           <Table.Th w={300} visibleFrom="sm"></Table.Th>
         </Table.Tr>
