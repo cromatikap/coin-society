@@ -5,8 +5,8 @@ export type MemberAddress = BitcoinAddress | typeof CANDIDATE | typeof ELIGIBLE_
 export type Member = {
   occupation: string;
   address: MemberAddress;
-  txRegistration: BitcoinTxid | null;
-  certification: boolean;
+  txRegistration?: BitcoinTxid;
+  certification?: boolean;
   identity?: {
     instagram?: Url;
     linkedin?: Url;
@@ -51,57 +51,41 @@ export const members: Member[] = [
     certification: false,
   },
   {
-    occupation: 'Entrepreneur',
-    address: "bc1q535k6enl43u979veg0cgz0dz3w23tultstkcwq",
-    txRegistration: null,
-    certification: false,
-  },
-  {
     occupation: 'Minimarket Owner',
     address: "bc1qq7mvrn4yrnsvy2kjz649dvwlna22tex68hd9cn",
     txRegistration: "aa68a1d0bdcd6203835421c321e92617b2f0d26f70d02edbef2dd625c14342a0",
     certification: false,
   },
   {
+    occupation: 'Entrepreneur',
+    address: "bc1q535k6enl43u979veg0cgz0dz3w23tultstkcwq",
+  },
+  {
     occupation: 'Passionate Cuber',
     address: "bc1qrcc7e63wnp7eh5pkz5n9eqy0nmpdtw04qz46pc",
-    txRegistration: "",
-    certification: false,
   },
   {
     occupation: 'PhD Researcher',
     address: CANDIDATE,
-    txRegistration: null,
-    certification: false,
   },
   {
     occupation: 'Fullstack developer',
     address: ELIGIBLE_CANDIDATE,
-    txRegistration: null,
-    certification: false,
   },
   {
     occupation: 'Network engineer',
     address: ELIGIBLE_CANDIDATE,
-    txRegistration: null,
-    certification: false,
   },
   {
     occupation: 'Degen maxi',
     address: ELIGIBLE_CANDIDATE,
-    txRegistration: null,
-    certification: false,
   },
   {
     occupation: 'Unknown',
     address: CANDIDATE,
-    txRegistration: null,
-    certification: false,
   },
   {
     occupation: 'Tatoo Artist',
     address: CANDIDATE,
-    txRegistration: null,
-    certification: false,
   }
 ]
