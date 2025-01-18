@@ -24,14 +24,14 @@ export default function Governance() {
       />
       <Ministry
         name="Faucet 1"
-        address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
+        address="bc1qayz7m844g89mhyvwja246mdd67p8udax8xgekx"
         multisig={["bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"]}
         quorum={1}
         Icon={<IconDropletHeart />}
       />
       <Ministry
         name="Faucet 2"
-        address="bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
+        address="bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"
         multisig={["bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"]}
         quorum={1}
         Icon={<IconDropletHeart />}
