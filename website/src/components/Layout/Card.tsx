@@ -1,4 +1,4 @@
-import { Card } from "@mantine/core";
+import { Card as MantineCard, Title as MantineTitle } from "@mantine/core";
 import { Headline } from "../Utils";
 import { ReactElement } from "react";
 
@@ -10,11 +10,19 @@ interface LayoutCardProps {
   withBorder?: boolean;
 }
 
-export default function LayoutCard({ children, icon, title, sub, withBorder = false }: LayoutCardProps) {
-  return <Card miw={{xs: 600, sm: 700}} withBorder={withBorder} shadow={withBorder ? "sm" : "none"}>
+export function Card({ children, icon, title, sub, withBorder = false }: LayoutCardProps) {
+  return <MantineCard miw={{xs: 600, sm: 700}} withBorder={withBorder} shadow={withBorder ? "sm" : "none"}>
     <Headline sub={sub} icon={icon}>
       {title}
     </Headline>
     {children}
-  </Card>
+  </MantineCard>
+}
+
+export function Title(props: { children: React.ReactNode }) {
+  return <MantineTitle order={3} my="md">{props.children}</MantineTitle>
+}
+
+export function Subtitle(props: { children: React.ReactNode }) {
+  return <MantineTitle order={5} mt="xs">{props.children}</MantineTitle>
 }
