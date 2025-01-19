@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import type { MemberAddress } from '@/data';
-import { CANDIDATE, ELIGIBLE_CANDIDATE } from '@/config';
 
 const STORAGE_KEY = 'btc-address-tags';
 const CANDIDATES_KEY = 'candidates-tags';
@@ -9,63 +8,49 @@ interface CandidateTagsMap {
   [index: number]: string;
 }
 
-export function useAddressTag(address: MemberAddress, index?: number) {
+export function useAddressTag(id: MemberAddress | number) {
   const [tag, setTag] = useState<string>('');
   const [isEditing, setIsEditing] = useState(false);
 
+  const isCandidate = typeof id === 'number';
+  const isAddress = !isCandidate && /^bc1q[0-9a-z]{38}$/.test(id as MemberAddress);
+
   useEffect(() => {
-    if (address === CANDIDATE || address === ELIGIBLE_CANDIDATE) {
-      if (typeof index !== 'number') {
-        console.warn('Index is required for candidate tags');
-        return;
-      }
+    if (isCandidate) {
       // For candidates, use the candidates storage
       const candidatesTags: CandidateTagsMap = JSON.parse(localStorage.getItem(CANDIDATES_KEY) || '{}');
-      if (candidatesTags[index]) {
-        setTag(candidatesTags[index]);
+      if (candidatesTags[id as number]) {
+        setTag(candidatesTags[id as number]);
       }
-      console.log("candidatesTags", candidatesTags);
     } else {
       // For bitcoin addresses, use the address storage
       const tags = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-      if (tags[address]) {
-        setTag(tags[address]);
+      if (tags[id]) {
+        setTag(tags[id]);
       }
     }
-  }, [address, index]);
+  }, [id, isCandidate]);
+
+  const saveTagToStorage = (storageKey: string, id: MemberAddress | number, newTag: string) => {
+    const storage = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    if (newTag.trim()) {
+      storage[id] = newTag.trim();
+      setTag(newTag.trim());
+    } else {
+      delete storage[id];
+      setTag('');
+    }
+    localStorage.setItem(storageKey, JSON.stringify(storage));
+  };
 
   const saveTag = (newTag: string) => {
-    if (address === CANDIDATE || address === ELIGIBLE_CANDIDATE) {
-      if (typeof index !== 'number') {
-        console.warn('Index is required for candidate tags');
-        return;
-      }
-      // Handle candidates storage
-      const candidatesTags: CandidateTagsMap = JSON.parse(localStorage.getItem(CANDIDATES_KEY) || '{}');
-      if (newTag.trim()) {
-        candidatesTags[index] = newTag.trim();
-        localStorage.setItem(CANDIDATES_KEY, JSON.stringify(candidatesTags));
-        setTag(newTag.trim());
-      } else {
-        delete candidatesTags[index];
-        localStorage.setItem(CANDIDATES_KEY, JSON.stringify(candidatesTags));
-        setTag('');
-      }
+    if (isCandidate) {
+      saveTagToStorage(CANDIDATES_KEY, id as number, newTag);
     } else {
-      // Handle bitcoin address storage
-      const tags = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-      if (newTag.trim()) {
-        tags[address] = newTag.trim();
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(tags));
-        setTag(newTag.trim());
-      } else {
-        delete tags[address];
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(tags));
-        setTag('');
-      }
+      saveTagToStorage(STORAGE_KEY, id, newTag);
     }
     setIsEditing(false);
   };
 
-  return { tag, isEditing, setIsEditing, saveTag };
+  return { tag, isEditing, setIsEditing, saveTag, isAddress };
 } 

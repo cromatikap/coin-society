@@ -2,9 +2,11 @@ import type { BitcoinAddress, BitcoinTxid, EthereumAddress, EthereumName, Url } 
 import { CANDIDATE, ELIGIBLE_CANDIDATE } from "@/config";
 
 export type MemberAddress = BitcoinAddress | typeof CANDIDATE | typeof ELIGIBLE_CANDIDATE;
-export type Member = {
+export type Candidate = {
   occupation: string;
   address: MemberAddress;
+}
+export type Member = Candidate & {
   txRegistration?: BitcoinTxid;
   certification?: boolean;
   identity?: {
@@ -64,6 +66,9 @@ export const members: Member[] = [
     occupation: 'Passionate Cuber',
     address: "bc1qrcc7e63wnp7eh5pkz5n9eqy0nmpdtw04qz46pc",
   },
+];
+
+export const candidates: Candidate[] = [
   {
     occupation: 'PhD Researcher',
     address: CANDIDATE,
@@ -88,4 +93,4 @@ export const members: Member[] = [
     occupation: 'Tatoo Artist',
     address: CANDIDATE,
   }
-]
+];

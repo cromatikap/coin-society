@@ -6,12 +6,12 @@ import { chainExplorer } from "@/config";
 import MemberIdentity from "@/components/MemberIdentity";
 import {LinkExt} from "@/components/Utils";
 
-export default function RowMember(props: Member & { index: number }) {
+export default function RowMember(props: Member) {
 
   return <Table.Tr>
     <Table.Td w={300}>
       <Group justify="flex-end" wrap="nowrap">
-        <MemberIdentity address={props.address} index={props.index} />
+        <MemberIdentity id={props.address} />
       </Group>
     </Table.Td>
     <Table.Td w={300}>

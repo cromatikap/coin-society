@@ -10,14 +10,11 @@ import type { MemberAddress } from "@/data";
 import { BitcoinAddress } from "@/types";
 
 interface MemberIdentityProps {
-  address: MemberAddress;
-  index?: number;
+  id: MemberAddress | number;
 }
 
-export default function MemberIdentity({ address, index }: MemberIdentityProps) {
-  const { tag, isEditing, setIsEditing, saveTag } = useAddressTag(address, index);
-
-  const isAddress = /^bc1q[0-9a-z]{38}$/.test(address);
+export default function MemberIdentity({ id }: MemberIdentityProps) {
+  const { tag, isEditing, setIsEditing, saveTag, isAddress } = useAddressTag(id);
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -27,7 +24,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
     }
   };
 
-  const displayAddress = isAddress ? format(address) : address;
+  const displayAddress = isAddress ? format(id as MemberAddress) : `${id}`;
 
   const inputProps = {
     defaultValue: tag,
@@ -49,7 +46,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
   return (
     <Group gap="xs" w="fit-content" wrap="nowrap">
       {isAddress ? (
-        <LinkExt href={chainExplorer.btc.address + address}>
+        <LinkExt href={chainExplorer.btc.address + id as MemberAddress}>
           <Box hiddenFrom="xs">
             {isEditing ? (
               <TextInput {...inputProps} />
@@ -79,7 +76,7 @@ export default function MemberIdentity({ address, index }: MemberIdentityProps) 
         >
           <IconPencil size="1rem" />
         </ActionIcon>
-        {isAddress && <ButtonCopy address={address as BitcoinAddress} />}
+        {isAddress && <ButtonCopy address={id as BitcoinAddress} />}
       </Group>
     </Group>
   );

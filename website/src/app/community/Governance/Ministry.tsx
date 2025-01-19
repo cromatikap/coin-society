@@ -8,7 +8,6 @@ import { Box, Button, Card, Group, Stack, Title, Tooltip } from "@mantine/core";
 import { IconArrowsShuffle2, IconUser, IconUserCheck } from "@tabler/icons-react";
 import type { Ministry } from "@/data";
 
-
 export default function Ministry(props: Ministry & { Icon: React.ReactElement }) {
   return <Card w={{base: "100%", xs: "fit-content"}} withBorder>
     <Group align="start" justify="center">
@@ -38,8 +37,8 @@ function Multisig(props: {multisig: BitcoinAddress[], quorum: number}) {
         </Group>
       </Button>
     </Tooltip>
-    {props.multisig.map((address) => (
-      <MemberIdentity key={address} address={address} />
+    {props.multisig.map((address, i) => (
+      <MemberIdentity key={i} id={address} />
     ))}
   </>
 }
@@ -51,8 +50,8 @@ function Coinjoin(props: {coinjoin: BitcoinAddress[]}) {
         <IconArrowsShuffle2 color="violet" />
       </Button>
     </Tooltip>
-    {props.coinjoin.map((address) => (
-      <MemberIdentity key={address} address={address} />
+    {props.coinjoin.map((address, i) => (
+      <MemberIdentity key={i} id={address} />
     ))}
   </>
 }
