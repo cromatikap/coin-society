@@ -13,7 +13,7 @@ export default function RowCandidate({ occupation, address, id }: Props) {
   
   return (
     <Table.Tr>
-      <Table.Td visibleFrom="sm" align="right">
+      <Table.Td align="right">
         <MemberIdentity key={id} id={id+1} />
       </Table.Td>
       <Table.Td>
