@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-import { CANDIDATE, ELIGIBLE_CANDIDATE, EMOJI_LIST } from "./config";
+import { EMOJI_LIST } from "./config";
 import type { MemberAddress } from "@/data";
 import { BitcoinAddress, BitcoinTxid } from "./types";
 
@@ -9,9 +9,6 @@ export const format = (input: BitcoinAddress | BitcoinTxid) => {
 }
 
 export function generateEmoji(address: MemberAddress): string {
-  if (address === CANDIDATE) return '❓';
-  if (address === ELIGIBLE_CANDIDATE) return '❔';
-
   const hash = crypto.createHash('sha256').update(address).digest('hex');
   const index = parseInt(hash.slice(0, 8), 16) % EMOJI_LIST.length;
   return EMOJI_LIST[index];
