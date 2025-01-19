@@ -1,6 +1,6 @@
 "use client";
 
-import Members from "./index";
+import Members from ".";
 
 export default function MembersPage() {
   return (

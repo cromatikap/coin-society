@@ -1,7 +1,7 @@
 "use client";
 
-import Members from "./members";
-import Governance from "./governance";
+import Members from "./Members";
+import Governance from "./Governance";
 import { Group } from "@mantine/core";
 
 export default function CommunityPage() {
