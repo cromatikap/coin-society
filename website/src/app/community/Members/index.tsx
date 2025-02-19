@@ -43,7 +43,7 @@ export default function Members(props: LayoutCardOptProps) {
         <Table.Thead>
           <Table.Tr>
             <Table.Th w={300}>
-              Adherents <Badge variant="filled" color="pink">6 slots remaining</Badge>
+              Adherents <Badge variant="filled" color="pink">2 slots remaining</Badge>
             </Table.Th>
             <Table.Th w={300}></Table.Th>
             <Table.Th w={300} visibleFrom="sm"></Table.Th>

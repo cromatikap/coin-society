@@ -63,4 +63,12 @@ export const members: Member[] = [
     occupation: 'Passionate Cuber',
     address: "bc1qrcc7e63wnp7eh5pkz5n9eqy0nmpdtw04qz46pc",
   },
+  {
+    occupation: '',
+    address: "bc1qeuupa0c8e87yxejud4pfy6em2zs7eff5ctjtqf",
+  },
+  {
+    occupation: '',
+    address: "bc1qqnpeafac363s0qdu806t5u2pyjafdrgfvq3xp0",
+  },
 ];
