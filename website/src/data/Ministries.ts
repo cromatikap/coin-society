@@ -1,15 +1,11 @@
 import type { BitcoinAddress } from "@/types";
-
-export const MINISTRY_PURPOSES = [
-  "faucet",
-  "stimulus"
-] as const;
+import { IconCodeCircle2, IconPlant, IconSchool, IconServerBolt, TablerIcon } from "@tabler/icons-react";
 
 export type Ministry = {
   name: string;
   address?: BitcoinAddress;
   quorum?: number;
-  purpose: (typeof MINISTRY_PURPOSES)[number];
+  Icon: TablerIcon;
 } & (
   | { coinjoin?: never; quorum: number; multisig: BitcoinAddress[]; }
   | { multisig?: never; quorum?: never; coinjoin: BitcoinAddress[]; }
@@ -25,14 +21,32 @@ export const ministries: Ministry[] = [
       "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
     ],
     quorum: 2,
-    purpose: "stimulus"
+    Icon: IconPlant
   },
   {
-    name: "Faucet",
+    name: "Education",
     coinjoin: [
-      "bc1qayz7m844g89mhyvwja246mdd67p8udax8xgekx",
+      "bc1qgdjv7k377sg72s8jr8nzpqw4cl92rq4tmfes9n",
       "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh"
     ],
-    purpose: "faucet"
+    Icon: IconSchool
+  },
+  {
+    name: "Operational Costs",
+    address: "bc1qn63tnrcrzf5k3rjhna3hl0ns65a7jqhrhyvunp",
+    multisig: [
+      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx",
+    ],
+    quorum: 1,
+    Icon: IconServerBolt
+  },
+  {
+    name: "Developer Bounties",
+    address: "bc1qncz00j0kc40d2kvujyuj7ygkp4pkja3cykrqet",
+    multisig: [
+      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx",
+    ],
+    quorum: 1,
+    Icon: IconCodeCircle2
   }
 ]

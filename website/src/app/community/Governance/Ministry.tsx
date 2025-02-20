@@ -5,15 +5,15 @@ import { LinkExt } from "@/components/Utils";
 import { chainExplorer } from "@/config";
 import { BitcoinAddress } from "@/types";
 import { Box, Button, Card, Group, Stack, Title, Tooltip } from "@mantine/core";
-import { IconArrowsShuffle2, IconUser, IconUserCheck } from "@tabler/icons-react";
+import { IconArrowsShuffle2, IconUser, IconUserCheck, TablerIcon } from "@tabler/icons-react";
 import type { Ministry } from "@/data";
 
-export default function Ministry(props: Ministry & { Icon: React.ReactElement }) {
+export default function Ministry(props: Ministry & { Icon: TablerIcon }) {
   return <Card w={{base: "100%", xs: "fit-content"}} withBorder>
     <Group align="start" justify="center">
       <Stack align="center">
         <WalletDetails name={props.name} address={props.address} />
-        {React.cloneElement(props.Icon, {size: 8*13})}
+        <props.Icon size={8*13} />
       </Stack>
       <Stack gap="xs" align="end">
         {props.multisig && <Multisig multisig={props.multisig} quorum={props.quorum} />}
