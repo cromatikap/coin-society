@@ -13,7 +13,7 @@ export type LayoutCardProps = {
   children: React.ReactNode;
   icon: ReactElement;
   title: string;
-  sub: string;
+  sub: React.ReactNode;
 } & LayoutCardOptProps;
 
 export function Card({

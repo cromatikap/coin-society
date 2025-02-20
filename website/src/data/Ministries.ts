@@ -13,17 +13,6 @@ export type Ministry = {
 
 export const ministries: Ministry[] = [
   {
-    name: "Stimulus and Growth",
-    address: "bc1q7722e27hewmfz0j5k2utuplylpaz2xjxdn94g5",
-    multisig: [
-      "bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9",
-      "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh",
-      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
-    ],
-    quorum: 2,
-    Icon: IconPlant
-  },
-  {
     name: "Education",
     coinjoin: [
       "bc1qgdjv7k377sg72s8jr8nzpqw4cl92rq4tmfes9n",
@@ -48,5 +37,16 @@ export const ministries: Ministry[] = [
     ],
     quorum: 1,
     Icon: IconCodeCircle2
+  },
+  {
+    name: "Stimulus and Growth",
+    address: "bc1q7722e27hewmfz0j5k2utuplylpaz2xjxdn94g5",
+    multisig: [
+      "bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9",
+      "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh",
+      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
+    ],
+    quorum: 2,
+    Icon: IconPlant
   }
 ]

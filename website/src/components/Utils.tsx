@@ -13,7 +13,7 @@ export function LinkOrg() {
   </Anchor>
 }
 
-export function Headline({sub, icon, children}: {sub?: string, icon?: React.ReactElement, children: React.ReactNode}) {
+export function Headline({sub, icon, children}: {sub?: React.ReactNode, icon?: React.ReactElement, children: React.ReactNode}) {
   return <>
     <Title order={2} mb="xs">
       <Group gap="md">

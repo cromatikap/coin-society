@@ -18,7 +18,6 @@ export default function Ministry(props: Ministry & { Icon: TablerIcon }) {
       <Stack gap="xs" align="end">
         {props.multisig && <Multisig multisig={props.multisig} quorum={props.quorum} />}
         {props.coinjoin && <Coinjoin coinjoin={props.coinjoin} />}
-        
       </Stack>
     </Group>
   </Card>
@@ -74,6 +73,6 @@ function WalletDetails(props: {name: string, address?: BitcoinAddress}) {
 
 function Wallet(props: {name: string}) {
   return <Title order={3}>
-    {props.name}
+    Dept. of {props.name}
   </Title>
 }
