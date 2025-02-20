@@ -6,9 +6,9 @@ import { chainExplorer } from "@/config";
 import { BitcoinAddress } from "@/types";
 import { Box, Button, Card, Group, Stack, Title, Tooltip } from "@mantine/core";
 import { IconArrowsShuffle2, IconUser, IconUserCheck, TablerIcon } from "@tabler/icons-react";
-import type { Ministry } from "@/data";
+import type { Department } from "@/data";
 
-export default function Ministry(props: Ministry & { Icon: TablerIcon }) {
+export default function Department(props: Department & { Icon: TablerIcon }) {
   return <Card w={{base: "100%", xs: "fit-content"}} withBorder>
     <Group align="start" justify="center">
       <Stack align="center">

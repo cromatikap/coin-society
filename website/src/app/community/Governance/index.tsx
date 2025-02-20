@@ -1,9 +1,9 @@
 import { IconBuildingBank } from "@tabler/icons-react";
-import Ministry from "./Ministry";
+import Department from "./Department";
 import { Card } from "@/components/Layout";
 import type { LayoutCardOptProps } from "@/components/Layout";
 import { Anchor, Flex } from "@mantine/core";
-import { ministries } from "@/data";
+import { departments } from "@/data";
 
 export default function Governance(props: LayoutCardOptProps ) {
 
@@ -14,11 +14,11 @@ export default function Governance(props: LayoutCardOptProps ) {
     sub={<>Departments. <Anchor href="/how-to-join" target="_blank" rel="noreferrer">Create your own here!</Anchor></>}
   >
     <Flex justify={{base: "stretch", xs: "flex-start"}} wrap="wrap" gap="xs" align="stretch">
-      {ministries.map((ministry) => 
-        <Ministry
-          key={ministry.name}
-          {...ministry}
-          Icon={ministry.Icon}
+      {departments.map((department) => 
+        <Department
+          key={department.name}
+          {...department}
+          Icon={department.Icon}
         />
       )}
     </Flex>

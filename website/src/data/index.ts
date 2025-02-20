@@ -1,3 +1,3 @@
 export * from "./Members";
-export * from "./Ministries";
+export * from "./Departments";
 export * from "./Candidates";

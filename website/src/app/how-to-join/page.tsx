@@ -1,6 +1,6 @@
 import { Group } from "@mantine/core";
 import HowToJoin from "./HowToJoin";
-import HowToCreateMinistry from "./HowToCreateMinistry";
+import HowToCreateDepartment from "./HowToCreateDepartment";
 
 export default function HowToJoinPage() {
   
@@ -10,7 +10,7 @@ export default function HowToJoinPage() {
       maw={{xs: "100%", lg: "48%"}}
       withBorder
     />
-    <HowToCreateMinistry
+    <HowToCreateDepartment
       miw={{xs: "100%", lg: "48%"}}
       maw={{xs: "100%", lg: "48%"}}
     />

@@ -1,7 +1,7 @@
 import type { BitcoinAddress } from "@/types";
 import { IconCodeCircle2, IconPlant, IconSchool, IconServerBolt, TablerIcon } from "@tabler/icons-react";
 
-export type Ministry = {
+export type Department = {
   name: string;
   address?: BitcoinAddress;
   quorum?: number;
@@ -11,7 +11,7 @@ export type Ministry = {
   | { multisig?: never; quorum?: never; coinjoin: BitcoinAddress[]; }
 );
 
-export const ministries: Ministry[] = [
+export const departments: Department[] = [
   {
     name: "Education",
     coinjoin: [
