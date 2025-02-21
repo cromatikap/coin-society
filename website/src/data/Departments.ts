@@ -24,7 +24,7 @@ export const departments: Department[] = [
     name: "Operational Costs",
     address: "bc1qn63tnrcrzf5k3rjhna3hl0ns65a7jqhrhyvunp",
     multisig: [
-      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx",
+      "bc1qym3lewe8sc76q4j2f9cuzjt56df3k7z7a6fjtm",
     ],
     quorum: 1,
     Icon: IconServerBolt
@@ -33,7 +33,7 @@ export const departments: Department[] = [
     name: "Developer Bounties",
     address: "bc1qncz00j0kc40d2kvujyuj7ygkp4pkja3cykrqet",
     multisig: [
-      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx",
+      "bc1qym3lewe8sc76q4j2f9cuzjt56df3k7z7a6fjtm",
     ],
     quorum: 1,
     Icon: IconCodeCircle2
@@ -44,7 +44,7 @@ export const departments: Department[] = [
     multisig: [
       "bc1q3sqklhqpdwjnpthecn0pgeyatr4vf290ezxvq9",
       "bc1q8em0mdcer84fy724awvvy9yegcart4r7gxf9yh",
-      "bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx"
+      "bc1qym3lewe8sc76q4j2f9cuzjt56df3k7z7a6fjtm"
     ],
     quorum: 2,
     Icon: IconPlant
