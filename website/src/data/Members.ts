@@ -32,12 +32,6 @@ export const members: Member[] = [
     certification: true,
   },
   {
-    occupation: 'Fullstack developer',
-    address: 'bc1q7stt7pr9ex5qtwst2mnxs7hu5ztz7mzvttx8sx',
-    txRegistration: '317f89c35c330e70c4d50a664c07d46f29dd41aea2dfd5c4a5366696448d1e2e',
-    certification: true,
-  },
-  {
     occupation: 'Marketing',
     address: 'bc1q3fk8jssft0928tzjktuefkp7k9r98g0q0ljd0m',
     txRegistration: '06c74924a411095ec6072f17005209daf05cf66eb87bce0d8c0c8201fac1b6cf',
@@ -70,5 +64,9 @@ export const members: Member[] = [
   {
     occupation: '',
     address: "bc1qqnpeafac363s0qdu806t5u2pyjafdrgfvq3xp0",
+  },
+  {
+    occupation: 'Fullstack developer',
+    address: 'bc1qym3lewe8sc76q4j2f9cuzjt56df3k7z7a6fjtm',
   },
 ];
