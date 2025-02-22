@@ -13,7 +13,7 @@ export default function Governance(props: LayoutCardOptProps ) {
     title="Governance."
     sub={<>Departments. <Anchor href="/how-to-join" target="_blank" rel="noreferrer">Create your own here!</Anchor></>}
   >
-    <Flex justify={{base: "stretch", xs: "flex-start"}} wrap="wrap" gap="xs" align="stretch">
+    <Flex wrap="wrap" gap="xs" align="start">
       {departments.map((department) => 
         <Department
           key={department.name}

@@ -15,7 +15,6 @@ export default function WhoWeAre() {
       <Text>
         We are everyone, we are small business owners, artists, entrepreneurs, researchers, software engineers, faith advisors, entrepreneurs, investors, and more.
       </Text>
-      
       <Text>
         <Anchor href="https://www.youtube.com/watch?v=hYJKBnGZnMA" target="_blank">
           We are the world government
@@ -28,7 +27,7 @@ export default function WhoWeAre() {
         We are incentivizing a circular economy based on blockchain so we find solutions for national and continental democratic Bitcoin funds management.
       </Text>
       <Text>
-        We are counting in satoshis (sat).
+        We are counting in <Anchor href="https://en.bitcoin.it/wiki/Satoshi_(unit)" target="_blank">satoshis (sat)</Anchor>.
       </Text>
       <Text>
         1 satoshi = 0.000,000,01 Bitcoin.
