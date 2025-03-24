@@ -1,8 +1,17 @@
 import { ensOrgUrl } from "@/config";
 import { Anchor, Group, Title } from "@mantine/core";
 
-export function LinkExt({href, children}: {href: string, children: React.ReactNode}) {
-  return <Anchor href={href} target="_blank" rel="noreferrer" display="flex">
+export function LinkExt({ 
+  href, 
+  url, 
+  children
+}: {
+  href?: string;
+  url?: string;
+  children: React.ReactNode;
+}) {
+  const linkUrl = url || href || "#";
+  return <Anchor href={linkUrl} target="_blank" rel="noreferrer" display="flex">
     {children}
   </Anchor>
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { MemberAddress } from '@/data';
+import { isValidBitcoinAddress } from '@/types';
 
 const STORAGE_KEY = 'btc-address-tags';
 const CANDIDATES_KEY = 'candidates-tags';
@@ -13,7 +14,7 @@ export function useAddressTag(id: MemberAddress | number) {
   const [isEditing, setIsEditing] = useState(false);
 
   const isCandidate = typeof id === 'number';
-  const isAddress = !isCandidate && /^bc1q[0-9a-z]{38}$/.test(id as MemberAddress);
+  const isAddress = !isCandidate && typeof id === 'string' && isValidBitcoinAddress(id);
 
   useEffect(() => {
     if (isCandidate) {

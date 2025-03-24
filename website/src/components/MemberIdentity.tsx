@@ -1,13 +1,13 @@
 import { chainExplorer } from "@/config";
 import { format } from "@/utils";
-import { Box, Group, TextInput, ActionIcon, Text } from "@mantine/core";
-import { IconUserBitcoin, IconPencil } from "@tabler/icons-react";
+import { Box, Group, TextInput, ActionIcon, Text, Tooltip } from "@mantine/core";
+import { IconUserBitcoin, IconPencil, IconAlertCircle } from "@tabler/icons-react";
 import { LinkExt } from "./Utils";
 import ButtonCopy from "./ButtonCopy";
 import { useAddressTag } from "@/hooks/useAddressTag";
 import { KeyboardEvent } from "react";
 import type { MemberAddress } from "@/data";
-import { BitcoinAddress } from "@/types";
+import { BitcoinAddress, isValidBitcoinAddress } from "@/types";
 
 interface MemberIdentityProps {
   id: MemberAddress | number;
@@ -24,6 +24,8 @@ export default function MemberIdentity({ id }: MemberIdentityProps) {
     }
   };
 
+  // Check if the address is a valid Bitcoin address
+  const isValidAddress = typeof id === 'string' && isValidBitcoinAddress(id);
   const displayAddress = isAddress ? format(id as MemberAddress) : `${id}`;
 
   const inputProps = {
@@ -60,6 +62,13 @@ export default function MemberIdentity({ id }: MemberIdentityProps) {
           </Box>
           <Box visibleFrom="xs" ff="monospace">
             {content}
+            {!isValidAddress && (
+              <Tooltip label="This address format might not be valid">
+                <ActionIcon size="xs" variant="subtle" color="yellow" component="span">
+                  <IconAlertCircle size={12} />
+                </ActionIcon>
+              </Tooltip>
+            )}
           </Box>
         </LinkExt>
       ) : (
@@ -76,7 +85,7 @@ export default function MemberIdentity({ id }: MemberIdentityProps) {
         >
           <IconPencil size="1rem" />
         </ActionIcon>
-        {isAddress && <ButtonCopy address={id as BitcoinAddress} />}
+        {isAddress && isValidAddress && <ButtonCopy address={id as BitcoinAddress} />}
       </Group>
     </Group>
   );
