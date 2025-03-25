@@ -1,3 +1,11 @@
+# Coin Society
+
+[![CI Status](https://github.com/cromatikap/coin-society/actions/workflows/CI.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/CI.yml)
+[![Test Coverage](https://github.com/cromatikap/coin-society/actions/workflows/Test-Coverage.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Test-Coverage.yml)
+[![Website Deployment](https://github.com/cromatikap/coin-society/actions/workflows/Website-Deployment.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Website-Deployment.yml)
+
+A decentralized platform for managing shared expenses using Bitcoin.
+
 # [coin-society.eth](https://coin-society.org) - Home
 
 [**Home**](/) | [Website](/website/) | [Certification](/certification/) | [Stable Sat](/stable-sat/) | [Contributing](/CONTRIBUTING.md)
