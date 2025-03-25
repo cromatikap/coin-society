@@ -2,6 +2,7 @@
 
 [![Continuous Deployment](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Deployment.yml)
 [![Continuous Integration](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml/badge.svg)](https://github.com/cromatikap/coin-society/actions/workflows/Continuous-Integration.yml)
+[![Coverage Status](https://codecov.io/gh/cromatikap/coin-society/branch/main/graph/badge.svg)](https://codecov.io/gh/cromatikap/coin-society)
 
 A decentralized platform for managing shared expenses using Bitcoin.
 
