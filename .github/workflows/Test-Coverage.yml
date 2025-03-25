@@ -39,7 +39,7 @@ jobs:
           verbose: true
 
       - name: Upload coverage report as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: coverage-report
           path: ./website/coverage 
